@@ -15,6 +15,10 @@
 		094F0824218F1DB000445FEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F0823218F1DB000445FEE /* main.m */; };
 		094F082E218F1DB100445FEE /* LFDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F082D218F1DB100445FEE /* LFDemoTests.m */; };
 		094F0839218F1DB100445FEE /* LFDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F0838218F1DB100445FEE /* LFDemoUITests.m */; };
+		094F0854218F3B9300445FEE /* LFOptimazeTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F0853218F3B9300445FEE /* LFOptimazeTableVC.m */; };
+		094F0858218F3BB100445FEE /* LFUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F0856218F3BB100445FEE /* LFUserCell.m */; };
+		094F0859218F3BB100445FEE /* LFUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094F0857218F3BB100445FEE /* LFUserCell.xib */; };
+		094F085E218F45CA00445FEE /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F085C218F45CA00445FEE /* YYFPSLabel.m */; };
 		540A978DB89788E24D2BFD5C /* libPods-LFDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B5E6C33FAF4A7E123D9CBA /* libPods-LFDemoUITests.a */; };
 		B0ABD8A956E4AD91D7CEA77A /* libPods-LFDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049ECFB5838911FD47D5ADA6 /* libPods-LFDemoTests.a */; };
 		D3A3BF66956F467B987BA64D /* libPods-LFDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42F8F483D0D9AC54C968A54 /* libPods-LFDemo.a */; };
@@ -56,6 +60,13 @@
 		094F0834218F1DB100445FEE /* LFDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		094F0838218F1DB100445FEE /* LFDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFDemoUITests.m; sourceTree = "<group>"; };
 		094F083A218F1DB100445FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094F0852218F3B9300445FEE /* LFOptimazeTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFOptimazeTableVC.h; sourceTree = "<group>"; };
+		094F0853218F3B9300445FEE /* LFOptimazeTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFOptimazeTableVC.m; sourceTree = "<group>"; };
+		094F0855218F3BB100445FEE /* LFUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUserCell.h; sourceTree = "<group>"; };
+		094F0856218F3BB100445FEE /* LFUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFUserCell.m; sourceTree = "<group>"; };
+		094F0857218F3BB100445FEE /* LFUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFUserCell.xib; sourceTree = "<group>"; };
+		094F085C218F45CA00445FEE /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		094F085D218F45CA00445FEE /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		0DAFC32F3BFFA1488E94CD21 /* Pods-LFDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemoUITests/Pods-LFDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		38B5E6C33FAF4A7E123D9CBA /* libPods-LFDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2CC1CCB35EFEEC38BBF562 /* Pods-LFDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemoUITests/Pods-LFDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +129,8 @@
 		094F0813218F1DAC00445FEE /* LFDemo */ = {
 			isa = PBXGroup;
 			children = (
+				094F085B218F459A00445FEE /* 3rd */,
+				094F0850218F3B6700445FEE /* Test */,
 				094F0814218F1DAC00445FEE /* AppDelegate.h */,
 				094F0815218F1DAC00445FEE /* AppDelegate.m */,
 				094F0817218F1DAC00445FEE /* ViewController.h */,
@@ -147,6 +160,35 @@
 				094F083A218F1DB100445FEE /* Info.plist */,
 			);
 			path = LFDemoUITests;
+			sourceTree = "<group>";
+		};
+		094F0850218F3B6700445FEE /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				094F0851218F3B7400445FEE /* TableView */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		094F0851218F3B7400445FEE /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				094F0852218F3B9300445FEE /* LFOptimazeTableVC.h */,
+				094F0853218F3B9300445FEE /* LFOptimazeTableVC.m */,
+				094F0855218F3BB100445FEE /* LFUserCell.h */,
+				094F0856218F3BB100445FEE /* LFUserCell.m */,
+				094F0857218F3BB100445FEE /* LFUserCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		094F085B218F459A00445FEE /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				094F085D218F45CA00445FEE /* YYFPSLabel.h */,
+				094F085C218F45CA00445FEE /* YYFPSLabel.m */,
+			);
+			path = 3rd;
 			sourceTree = "<group>";
 		};
 		648BE565A953ED0057C090FC /* Frameworks */ = {
@@ -278,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094F0859218F3BB100445FEE /* LFUserCell.xib in Resources */,
 				094F0821218F1DB000445FEE /* LaunchScreen.storyboard in Resources */,
 				094F081E218F1DB000445FEE /* Assets.xcassets in Resources */,
 				094F081C218F1DAC00445FEE /* Main.storyboard in Resources */,
@@ -374,8 +417,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094F085E218F45CA00445FEE /* YYFPSLabel.m in Sources */,
 				094F0819218F1DAC00445FEE /* ViewController.m in Sources */,
 				094F0824218F1DB000445FEE /* main.m in Sources */,
+				094F0854218F3B9300445FEE /* LFOptimazeTableVC.m in Sources */,
+				094F0858218F3BB100445FEE /* LFUserCell.m in Sources */,
 				094F0816218F1DAC00445FEE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

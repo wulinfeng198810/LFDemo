@@ -8,6 +8,7 @@ target 'LFDemo' do
   # Pods for LFDemo
   pod 'YYKit'
   pod 'Masonry'
+#  pod 'WatchdogInspector'
 
   target 'LFDemoTests' do
     inherit! :search_paths

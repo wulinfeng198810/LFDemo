@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import <YYKit.h>
+#import "3rd/YYFPSLabel.h"
+//#import <WatchdogInspector/TWWatchdogInspector.h>
 @interface AppDelegate ()
 
 @end
@@ -16,8 +18,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+#if defined(DEBUG)||defined(_DEBUG)
+//    [TWWatchdogInspector start];
+#endif
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self configFpsLabel];
+    });
+    
     return YES;
+}
+
+- (void)configFpsLabel {
+    YYFPSLabel *fps = [YYFPSLabel new];
+    fps.top = 0;
+    fps.left = 110;
+    [self.window addSubview:fps];
 }
 
 

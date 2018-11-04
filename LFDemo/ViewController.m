@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "Test/TableView/LFOptimazeTableVC.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
+- (IBAction)testAction:(id)sender {
+    [self.navigationController pushViewController:LFOptimazeTableVC.new animated:YES];
+}
 
 @end
