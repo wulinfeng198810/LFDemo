@@ -20,6 +20,10 @@
 		094F0859218F3BB100445FEE /* LFUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094F0857218F3BB100445FEE /* LFUserCell.xib */; };
 		094F085E218F45CA00445FEE /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F085C218F45CA00445FEE /* YYFPSLabel.m */; };
 		540A978DB89788E24D2BFD5C /* libPods-LFDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B5E6C33FAF4A7E123D9CBA /* libPods-LFDemoUITests.a */; };
+		6310F68621CB7A65003A6A34 /* NSNotificationCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310F68421CB7A65003A6A34 /* NSNotificationCenterVC.m */; };
+		6310F68721CB7A65003A6A34 /* NSNotificationCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6310F68521CB7A65003A6A34 /* NSNotificationCenterVC.xib */; };
+		6310F68D21CB7F88003A6A34 /* LFNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310F68C21CB7F88003A6A34 /* LFNotificationCenter.m */; };
+		6310F69021CB8449003A6A34 /* NSNotificationCenter+LFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310F68F21CB8449003A6A34 /* NSNotificationCenter+LFAdd.m */; };
 		B0ABD8A956E4AD91D7CEA77A /* libPods-LFDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049ECFB5838911FD47D5ADA6 /* libPods-LFDemoTests.a */; };
 		D3A3BF66956F467B987BA64D /* libPods-LFDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42F8F483D0D9AC54C968A54 /* libPods-LFDemo.a */; };
 /* End PBXBuildFile section */
@@ -69,6 +73,13 @@
 		094F085D218F45CA00445FEE /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		0DAFC32F3BFFA1488E94CD21 /* Pods-LFDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemoUITests/Pods-LFDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		38B5E6C33FAF4A7E123D9CBA /* libPods-LFDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6310F68321CB7A65003A6A34 /* NSNotificationCenterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNotificationCenterVC.h; sourceTree = "<group>"; };
+		6310F68421CB7A65003A6A34 /* NSNotificationCenterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNotificationCenterVC.m; sourceTree = "<group>"; };
+		6310F68521CB7A65003A6A34 /* NSNotificationCenterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSNotificationCenterVC.xib; sourceTree = "<group>"; };
+		6310F68B21CB7F88003A6A34 /* LFNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFNotificationCenter.h; sourceTree = "<group>"; };
+		6310F68C21CB7F88003A6A34 /* LFNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFNotificationCenter.m; sourceTree = "<group>"; };
+		6310F68E21CB8449003A6A34 /* NSNotificationCenter+LFAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+LFAdd.h"; sourceTree = "<group>"; };
+		6310F68F21CB8449003A6A34 /* NSNotificationCenter+LFAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+LFAdd.m"; sourceTree = "<group>"; };
 		6D2CC1CCB35EFEEC38BBF562 /* Pods-LFDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemoUITests/Pods-LFDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E4C9C97D11F058BB60D6A93 /* Pods-LFDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemo/Pods-LFDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AC80C295C0F075A100FE9FD7 /* Pods-LFDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemoTests/Pods-LFDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +176,8 @@
 		094F0850218F3B6700445FEE /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				6310F68221CB7A2B003A6A34 /* AppOrientation */,
+				6310F68121CB7A18003A6A34 /* NSNotificationCenter */,
 				094F0851218F3B7400445FEE /* TableView */,
 			);
 			path = Test;
@@ -189,6 +202,27 @@
 				094F085C218F45CA00445FEE /* YYFPSLabel.m */,
 			);
 			path = 3rd;
+			sourceTree = "<group>";
+		};
+		6310F68121CB7A18003A6A34 /* NSNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				6310F68321CB7A65003A6A34 /* NSNotificationCenterVC.h */,
+				6310F68421CB7A65003A6A34 /* NSNotificationCenterVC.m */,
+				6310F68521CB7A65003A6A34 /* NSNotificationCenterVC.xib */,
+				6310F68B21CB7F88003A6A34 /* LFNotificationCenter.h */,
+				6310F68C21CB7F88003A6A34 /* LFNotificationCenter.m */,
+				6310F68E21CB8449003A6A34 /* NSNotificationCenter+LFAdd.h */,
+				6310F68F21CB8449003A6A34 /* NSNotificationCenter+LFAdd.m */,
+			);
+			path = NSNotificationCenter;
+			sourceTree = "<group>";
+		};
+		6310F68221CB7A2B003A6A34 /* AppOrientation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppOrientation;
 			sourceTree = "<group>";
 		};
 		648BE565A953ED0057C090FC /* Frameworks */ = {
@@ -324,6 +358,7 @@
 				094F0821218F1DB000445FEE /* LaunchScreen.storyboard in Resources */,
 				094F081E218F1DB000445FEE /* Assets.xcassets in Resources */,
 				094F081C218F1DAC00445FEE /* Main.storyboard in Resources */,
+				6310F68721CB7A65003A6A34 /* NSNotificationCenterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +454,9 @@
 			files = (
 				094F085E218F45CA00445FEE /* YYFPSLabel.m in Sources */,
 				094F0819218F1DAC00445FEE /* ViewController.m in Sources */,
+				6310F68621CB7A65003A6A34 /* NSNotificationCenterVC.m in Sources */,
+				6310F69021CB8449003A6A34 /* NSNotificationCenter+LFAdd.m in Sources */,
+				6310F68D21CB7F88003A6A34 /* LFNotificationCenter.m in Sources */,
 				094F0824218F1DB000445FEE /* main.m in Sources */,
 				094F0854218F3B9300445FEE /* LFOptimazeTableVC.m in Sources */,
 				094F0858218F3BB100445FEE /* LFUserCell.m in Sources */,

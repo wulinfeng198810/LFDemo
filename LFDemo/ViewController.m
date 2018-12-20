@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Test/TableView/LFOptimazeTableVC.h"
+#import "Test/NSNotificationCenter/NSNotificationCenterVC.h"
 @interface ViewController ()
 
 @end
@@ -20,7 +21,7 @@
 }
 
 - (IBAction)testAction:(id)sender {
-    [self.navigationController pushViewController:LFOptimazeTableVC.new animated:YES];
+    [self.navigationController pushViewController:NSNotificationCenterVC.new animated:YES];
 }
 
 @end
