@@ -7,21 +7,18 @@
 //
 
 #import "ViewController.h"
-#import "Test/TableView/LFOptimazeTableVC.h"
-#import "Test/NSNotificationCenter/NSNotificationCenterVC.h"
-@interface ViewController ()
 
+@interface ViewController ()
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 - (IBAction)testAction:(id)sender {
-    [self.navigationController pushViewController:NSNotificationCenterVC.new animated:YES];
+    [self.navigationController pushViewController:NSClassFromString(@"LFTextShowAllVC").new animated:YES];
 }
 
 @end
