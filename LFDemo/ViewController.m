@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UITextFieldTestVC.h"
 
 @interface ViewController ()
 @end
@@ -18,7 +19,9 @@
 }
 
 - (IBAction)testAction:(id)sender {
-    [self.navigationController pushViewController:NSClassFromString(@"LFTextShowAllVC").new animated:YES];
+    UIViewController *vc = [[UITextFieldTestVC alloc] initWithNibName:@"UITextFieldTestVC" bundle:NSBundle.mainBundle];
+//    [self.navigationController pushViewController:NSClassFromString(@"UITextFieldViewTestVC").new animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
