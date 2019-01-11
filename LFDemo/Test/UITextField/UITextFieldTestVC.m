@@ -31,6 +31,7 @@
         [mTextFieldString insertString:string atIndex:range.location];
     } else if (range.length > 0 && string.length == 0) { //删除字符串
         [mTextFieldString replaceCharactersInRange:range withString:@""];
+        if (mTextFieldString.length == 0) { return YES; }
     } else {
         NSAssert(NO, @"输入异常");
         return NO;
