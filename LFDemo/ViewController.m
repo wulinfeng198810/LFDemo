@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UITextFieldTestVC.h"
+#import "ErrorImageTestVC.h"
 
 @interface ViewController ()
 @end
@@ -19,7 +19,7 @@
 }
 
 - (IBAction)testAction:(id)sender {
-    UIViewController *vc = [[UITextFieldTestVC alloc] initWithNibName:@"UITextFieldTestVC" bundle:NSBundle.mainBundle];
+    UIViewController *vc = [[ErrorImageTestVC alloc] initWithNibName:@"ErrorImageTestVC" bundle:NSBundle.mainBundle];
 //    [self.navigationController pushViewController:NSClassFromString(@"UITextFieldViewTestVC").new animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
 }

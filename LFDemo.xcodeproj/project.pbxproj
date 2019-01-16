@@ -24,6 +24,8 @@
 		6310F68721CB7A65003A6A34 /* NSNotificationCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6310F68521CB7A65003A6A34 /* NSNotificationCenterVC.xib */; };
 		6310F68D21CB7F88003A6A34 /* LFNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310F68C21CB7F88003A6A34 /* LFNotificationCenter.m */; };
 		6310F69021CB8449003A6A34 /* NSNotificationCenter+LFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310F68F21CB8449003A6A34 /* NSNotificationCenter+LFAdd.m */; };
+		6311B70C21EED7620058F650 /* ErrorImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6311B70A21EED7620058F650 /* ErrorImageTestVC.m */; };
+		6311B70D21EED7620058F650 /* ErrorImageTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6311B70B21EED7620058F650 /* ErrorImageTestVC.xib */; };
 		631B0ADD21E8374D00CEBE60 /* UITextFieldTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B0ADB21E8374D00CEBE60 /* UITextFieldTestVC.m */; };
 		631B0ADE21E8374D00CEBE60 /* UITextFieldTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631B0ADC21E8374D00CEBE60 /* UITextFieldTestVC.xib */; };
 		63D115F121CDEF5600E35504 /* LFTextShowAllVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D115F021CDEF5600E35504 /* LFTextShowAllVC.m */; };
@@ -83,6 +85,9 @@
 		6310F68C21CB7F88003A6A34 /* LFNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFNotificationCenter.m; sourceTree = "<group>"; };
 		6310F68E21CB8449003A6A34 /* NSNotificationCenter+LFAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+LFAdd.h"; sourceTree = "<group>"; };
 		6310F68F21CB8449003A6A34 /* NSNotificationCenter+LFAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+LFAdd.m"; sourceTree = "<group>"; };
+		6311B70921EED7620058F650 /* ErrorImageTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorImageTestVC.h; sourceTree = "<group>"; };
+		6311B70A21EED7620058F650 /* ErrorImageTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorImageTestVC.m; sourceTree = "<group>"; };
+		6311B70B21EED7620058F650 /* ErrorImageTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorImageTestVC.xib; sourceTree = "<group>"; };
 		631B0ADA21E8374D00CEBE60 /* UITextFieldTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldTestVC.h; sourceTree = "<group>"; };
 		631B0ADB21E8374D00CEBE60 /* UITextFieldTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextFieldTestVC.m; sourceTree = "<group>"; };
 		631B0ADC21E8374D00CEBE60 /* UITextFieldTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITextFieldTestVC.xib; sourceTree = "<group>"; };
@@ -184,6 +189,7 @@
 		094F0850218F3B6700445FEE /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				6311B70821EED7190058F650 /* ErrorImage */,
 				631B0AD421E8297100CEBE60 /* UITextField */,
 				63D115F221CDEF5D00E35504 /* TextShowAll */,
 				6310F68221CB7A2B003A6A34 /* AppOrientation */,
@@ -233,6 +239,16 @@
 			children = (
 			);
 			path = AppOrientation;
+			sourceTree = "<group>";
+		};
+		6311B70821EED7190058F650 /* ErrorImage */ = {
+			isa = PBXGroup;
+			children = (
+				6311B70921EED7620058F650 /* ErrorImageTestVC.h */,
+				6311B70A21EED7620058F650 /* ErrorImageTestVC.m */,
+				6311B70B21EED7620058F650 /* ErrorImageTestVC.xib */,
+			);
+			path = ErrorImage;
 			sourceTree = "<group>";
 		};
 		631B0AD421E8297100CEBE60 /* UITextField */ = {
@@ -387,6 +403,7 @@
 				631B0ADE21E8374D00CEBE60 /* UITextFieldTestVC.xib in Resources */,
 				094F0821218F1DB000445FEE /* LaunchScreen.storyboard in Resources */,
 				094F081E218F1DB000445FEE /* Assets.xcassets in Resources */,
+				6311B70D21EED7620058F650 /* ErrorImageTestVC.xib in Resources */,
 				094F081C218F1DAC00445FEE /* Main.storyboard in Resources */,
 				6310F68721CB7A65003A6A34 /* NSNotificationCenterVC.xib in Resources */,
 			);
@@ -489,6 +506,7 @@
 				6310F69021CB8449003A6A34 /* NSNotificationCenter+LFAdd.m in Sources */,
 				6310F68D21CB7F88003A6A34 /* LFNotificationCenter.m in Sources */,
 				094F0824218F1DB000445FEE /* main.m in Sources */,
+				6311B70C21EED7620058F650 /* ErrorImageTestVC.m in Sources */,
 				094F0854218F3B9300445FEE /* LFOptimazeTableVC.m in Sources */,
 				094F0858218F3BB100445FEE /* LFUserCell.m in Sources */,
 				631B0ADD21E8374D00CEBE60 /* UITextFieldTestVC.m in Sources */,

@@ -8,6 +8,8 @@ target 'LFDemo' do
   # Pods for LFDemo
   pod 'YYKit'
   pod 'Masonry'
+  pod 'SDWebImage'
+#  pod 'SDWebImage/WebP'
 #  pod 'WatchdogInspector'
 
   target 'LFDemoTests' do
