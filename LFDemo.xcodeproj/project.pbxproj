@@ -28,6 +28,9 @@
 		6311B70D21EED7620058F650 /* ErrorImageTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6311B70B21EED7620058F650 /* ErrorImageTestVC.xib */; };
 		631B0ADD21E8374D00CEBE60 /* UITextFieldTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B0ADB21E8374D00CEBE60 /* UITextFieldTestVC.m */; };
 		631B0ADE21E8374D00CEBE60 /* UITextFieldTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631B0ADC21E8374D00CEBE60 /* UITextFieldTestVC.xib */; };
+		6376F8712216C9D60005A1C4 /* YYCache_TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6376F86F2216C9D60005A1C4 /* YYCache_TestVC.m */; };
+		6376F8722216C9D60005A1C4 /* YYCache_TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6376F8702216C9D60005A1C4 /* YYCache_TestVC.xib */; };
+		6376F8752216CA080005A1C4 /* DYCircleCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6376F8742216CA080005A1C4 /* DYCircleCacheHelper.m */; };
 		63D115F121CDEF5600E35504 /* LFTextShowAllVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D115F021CDEF5600E35504 /* LFTextShowAllVC.m */; };
 		B0ABD8A956E4AD91D7CEA77A /* libPods-LFDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049ECFB5838911FD47D5ADA6 /* libPods-LFDemoTests.a */; };
 		D3A3BF66956F467B987BA64D /* libPods-LFDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42F8F483D0D9AC54C968A54 /* libPods-LFDemo.a */; };
@@ -91,6 +94,11 @@
 		631B0ADA21E8374D00CEBE60 /* UITextFieldTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldTestVC.h; sourceTree = "<group>"; };
 		631B0ADB21E8374D00CEBE60 /* UITextFieldTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextFieldTestVC.m; sourceTree = "<group>"; };
 		631B0ADC21E8374D00CEBE60 /* UITextFieldTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITextFieldTestVC.xib; sourceTree = "<group>"; };
+		6376F86E2216C9D60005A1C4 /* YYCache_TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCache_TestVC.h; sourceTree = "<group>"; };
+		6376F86F2216C9D60005A1C4 /* YYCache_TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCache_TestVC.m; sourceTree = "<group>"; };
+		6376F8702216C9D60005A1C4 /* YYCache_TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYCache_TestVC.xib; sourceTree = "<group>"; };
+		6376F8732216CA080005A1C4 /* DYCircleCacheHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYCircleCacheHelper.h; sourceTree = "<group>"; };
+		6376F8742216CA080005A1C4 /* DYCircleCacheHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYCircleCacheHelper.m; sourceTree = "<group>"; };
 		63D115EF21CDEF5600E35504 /* LFTextShowAllVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFTextShowAllVC.h; sourceTree = "<group>"; };
 		63D115F021CDEF5600E35504 /* LFTextShowAllVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFTextShowAllVC.m; sourceTree = "<group>"; };
 		6D2CC1CCB35EFEEC38BBF562 /* Pods-LFDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemoUITests/Pods-LFDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +197,7 @@
 		094F0850218F3B6700445FEE /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				6376F86D2216C9320005A1C4 /* YYCache_Test */,
 				6311B70821EED7190058F650 /* ErrorImage */,
 				631B0AD421E8297100CEBE60 /* UITextField */,
 				63D115F221CDEF5D00E35504 /* TextShowAll */,
@@ -259,6 +268,18 @@
 				631B0ADC21E8374D00CEBE60 /* UITextFieldTestVC.xib */,
 			);
 			path = UITextField;
+			sourceTree = "<group>";
+		};
+		6376F86D2216C9320005A1C4 /* YYCache_Test */ = {
+			isa = PBXGroup;
+			children = (
+				6376F86E2216C9D60005A1C4 /* YYCache_TestVC.h */,
+				6376F86F2216C9D60005A1C4 /* YYCache_TestVC.m */,
+				6376F8702216C9D60005A1C4 /* YYCache_TestVC.xib */,
+				6376F8732216CA080005A1C4 /* DYCircleCacheHelper.h */,
+				6376F8742216CA080005A1C4 /* DYCircleCacheHelper.m */,
+			);
+			path = YYCache_Test;
 			sourceTree = "<group>";
 		};
 		63D115F221CDEF5D00E35504 /* TextShowAll */ = {
@@ -400,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				094F0859218F3BB100445FEE /* LFUserCell.xib in Resources */,
+				6376F8722216C9D60005A1C4 /* YYCache_TestVC.xib in Resources */,
 				631B0ADE21E8374D00CEBE60 /* UITextFieldTestVC.xib in Resources */,
 				094F0821218F1DB000445FEE /* LaunchScreen.storyboard in Resources */,
 				094F081E218F1DB000445FEE /* Assets.xcassets in Resources */,
@@ -504,11 +526,13 @@
 				63D115F121CDEF5600E35504 /* LFTextShowAllVC.m in Sources */,
 				6310F68621CB7A65003A6A34 /* NSNotificationCenterVC.m in Sources */,
 				6310F69021CB8449003A6A34 /* NSNotificationCenter+LFAdd.m in Sources */,
+				6376F8712216C9D60005A1C4 /* YYCache_TestVC.m in Sources */,
 				6310F68D21CB7F88003A6A34 /* LFNotificationCenter.m in Sources */,
 				094F0824218F1DB000445FEE /* main.m in Sources */,
 				6311B70C21EED7620058F650 /* ErrorImageTestVC.m in Sources */,
 				094F0854218F3B9300445FEE /* LFOptimazeTableVC.m in Sources */,
 				094F0858218F3BB100445FEE /* LFUserCell.m in Sources */,
+				6376F8752216CA080005A1C4 /* DYCircleCacheHelper.m in Sources */,
 				631B0ADD21E8374D00CEBE60 /* UITextFieldTestVC.m in Sources */,
 				094F0816218F1DAC00445FEE /* AppDelegate.m in Sources */,
 			);
