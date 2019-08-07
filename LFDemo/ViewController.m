@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "YYCache_TestVC.h"
+#import "CGHSocketTestVC.h"
 #import <YYKit.h>
 
 #define DY_APPSTORE 1
@@ -21,18 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-#if !DY_APPSTORE
-    NSLog(@"1111");
-#endif
-    NSLog(@"4444");
-#if !DY_APPSTORE
-    NSLog(@"2222");
-#endif
-    NSLog(@"3333");
+    UIButton *testBtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 50, 100, 100)];
+    [testBtn setTitle:@"测试" forState:UIControlStateNormal];
+    testBtn.backgroundColor = UIColor.redColor;
+    [testBtn addTarget:self action:@selector(testAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testBtn];
 }
 
 - (IBAction)testAction:(id)sender {
-    UIViewController *vc = [[YYCache_TestVC alloc] initWithNibName:@"YYCache_TestVC" bundle:NSBundle.mainBundle];
+    UIViewController *vc = [[CGHSocketTestVC alloc] initWithNibName:@"CGHSocketTestVC" bundle:NSBundle.mainBundle];
 //    [self.navigationController pushViewController:NSClassFromString(@"UITextFieldViewTestVC").new animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
 }
