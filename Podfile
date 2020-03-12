@@ -8,7 +8,7 @@ target 'LFDemo' do
   # Pods for LFDemo
   pod 'YYKit'
   pod 'Masonry'
-  pod 'SDWebImage'
+  pod 'SDWebImage', '~> 5.6.0'
   pod 'AFNetworking'
   pod 'CocoaAsyncSocket'
   pod 'SocketRocket'

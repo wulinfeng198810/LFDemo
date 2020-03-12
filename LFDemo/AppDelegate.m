@@ -9,23 +9,78 @@
 #import "AppDelegate.h"
 #import <YYKit.h>
 #import "3rd/YYFPSLabel.h"
-//#import <WatchdogInspector/TWWatchdogInspector.h>
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-#if defined(DEBUG)||defined(_DEBUG)
-//    [TWWatchdogInspector start];
-#endif
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSLog(@"➡️ application path:%@", path);
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self configFpsLabel];
     });
     
+//    [self testDispatchSemaphore];
+//    [self testDispatchBarrier];
+//    [self testDispatchGroup];
     return YES;
+}
+
+- (void)testDispatchSemaphore {
+    dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+    for (NSUInteger i = 0; i < 10; i++) {
+        [self task:i callback:^{
+            dispatch_semaphore_signal(sem);
+        }];
+        dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    }
+    NSLog(@"====");
+    NSLog(@"====123123");
+}
+
+- (void)testDispatchBarrier {
+    NSLog(@"====000=====");
+    dispatch_queue_t queue = dispatch_queue_create("save", DISPATCH_QUEUE_CONCURRENT);
+    for (NSUInteger i = 0; i < 10; i++) {
+        dispatch_async(queue, ^{
+            sleep(1);
+            NSLog(@"%@", @(i));
+        });
+    }
+    NSLog(@"====1111====");
+    dispatch_barrier_sync(queue, ^{
+        NSLog(@"====2222====");
+    });
+    NSLog(@"====3333====");
+}
+
+- (void)testDispatchGroup {
+    NSLog(@"====000=====");
+    dispatch_group_t group = dispatch_group_create();
+    for (NSUInteger i = 0; i < 10; i++) {
+        dispatch_group_enter(group);
+        [self task:i callback:^{
+            dispatch_group_leave(group);
+        }];
+    }
+    NSLog(@"====1111====");
+    dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+    NSLog(@"====");
+    dispatch_queue_t queue = dispatch_queue_create("save", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"====2222====");
+        dispatch_semaphore_signal(sem);
+    });
+    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    NSLog(@"====3333====");
+}
+
+- (void)task:(NSUInteger)taskId callback:(void(^)(void))callback {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        sleep(1);
+        NSLog(@"taskId = %@", @(taskId));
+        !callback ?: callback();
+    });
 }
 
 - (void)configFpsLabel {
@@ -33,34 +88,7 @@
     fps.top = 0;
     fps.left = 110;
     [self.window addSubview:fps];
+    self.window.backgroundColor = UIColor.whiteColor;
 }
-
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-}
-
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
 
 @end

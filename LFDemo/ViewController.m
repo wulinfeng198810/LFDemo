@@ -7,13 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "CGHSocketTestVC.h"
 #import <YYKit.h>
+#import "TestFileDownloadTableVC.h"
 
 #define DY_APPSTORE 1
 
 @interface ViewController ()
-@property (nonatomic, strong) YYLabel *agressLabel;
+@property (nonatomic, strong) UILabel *badgeLabel;
 @end
 
 @implementation ViewController
@@ -29,7 +29,7 @@
 }
 
 - (IBAction)testAction:(id)sender {
-    UIViewController *vc = [[CGHSocketTestVC alloc] initWithNibName:@"CGHSocketTestVC" bundle:NSBundle.mainBundle];
+    UIViewController *vc = [[TestFileDownloadTableVC alloc] initWithNibName:@"TestFileDownloadTableVC" bundle:NSBundle.mainBundle];
 //    [self.navigationController pushViewController:NSClassFromString(@"UITextFieldViewTestVC").new animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
 }
