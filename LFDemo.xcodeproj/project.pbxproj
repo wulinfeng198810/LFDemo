@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		09113011236A76340001A9E9 /* JSContextTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09113010236A76340001A9E9 /* JSContextTestVC.m */; };
-		09113016236A79A00001A9E9 /* plugin.js in Resources */ = {isa = PBXBuildFile; fileRef = 09113014236A79A00001A9E9 /* plugin.js */; };
 		09113017236A79A00001A9E9 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 09113015236A79A00001A9E9 /* index.js */; };
 		09232DED241098B6006B1ECB /* CGHDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09232DEC241098B6006B1ECB /* CGHDownloadManager.m */; };
 		09232DF3241099E1006B1ECB /* CGHDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 09232DF2241099E1006B1ECB /* CGHDownloadTask.m */; };
@@ -39,6 +38,7 @@
 		09CCD5AF2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5AE2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m */; };
 		09CCD5B62363E3680050AD8D /* NSURLProtocol+WebKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5B22363E3680050AD8D /* NSURLProtocol+WebKitSupport.m */; };
 		09CCD5B72363E3680050AD8D /* NSString+ACObfuscation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5B52363E3680050AD8D /* NSString+ACObfuscation.m */; };
+		09D8D496241B74BE0052C75C /* indexa.js in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D495241B74BE0052C75C /* indexa.js */; };
 		09D9CF682410F1D100DFF038 /* CGHDownloadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D9CF672410F1D100DFF038 /* CGHDownloadUtil.m */; };
 		09EB59E42351C0A90047E031 /* CGHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EB59E32351C0A90047E031 /* CGHNavigationController.m */; };
 		09F0A2A324125AFF00A3C815 /* TestFileDownloadTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F0A2A124125AFF00A3C815 /* TestFileDownloadTableVC.m */; };
@@ -82,7 +82,6 @@
 		07CD6463203455E32A8C76CB /* Pods-LFDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemoTests/Pods-LFDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0911300F236A76340001A9E9 /* JSContextTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSContextTestVC.h; sourceTree = "<group>"; };
 		09113010236A76340001A9E9 /* JSContextTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSContextTestVC.m; sourceTree = "<group>"; };
-		09113014236A79A00001A9E9 /* plugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = plugin.js; sourceTree = "<group>"; };
 		09113015236A79A00001A9E9 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		09232DEB241098B6006B1ECB /* CGHDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHDownloadManager.h; sourceTree = "<group>"; };
 		09232DEC241098B6006B1ECB /* CGHDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHDownloadManager.m; sourceTree = "<group>"; };
@@ -133,6 +132,7 @@
 		09CCD5B42363E3680050AD8D /* NSString+ACObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ACObfuscation.h"; sourceTree = "<group>"; };
 		09CCD5B52363E3680050AD8D /* NSString+ACObfuscation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACObfuscation.m"; sourceTree = "<group>"; };
 		09CCD5B82363E3F80050AD8D /* ACObfuscationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACObfuscationHeader.h; sourceTree = "<group>"; };
+		09D8D495241B74BE0052C75C /* indexa.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = indexa.js; sourceTree = "<group>"; };
 		09D9CF662410F1D100DFF038 /* CGHDownloadUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHDownloadUtil.h; sourceTree = "<group>"; };
 		09D9CF672410F1D100DFF038 /* CGHDownloadUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHDownloadUtil.m; sourceTree = "<group>"; };
 		09EB59E22351C0A90047E031 /* CGHNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHNavigationController.h; sourceTree = "<group>"; };
@@ -210,18 +210,10 @@
 		09113012236A79A00001A9E9 /* js */ = {
 			isa = PBXGroup;
 			children = (
-				09113013236A79A00001A9E9 /* plugin */,
 				09113015236A79A00001A9E9 /* index.js */,
+				09D8D495241B74BE0052C75C /* indexa.js */,
 			);
 			path = js;
-			sourceTree = "<group>";
-		};
-		09113013236A79A00001A9E9 /* plugin */ = {
-			isa = PBXGroup;
-			children = (
-				09113014236A79A00001A9E9 /* plugin.js */,
-			);
-			path = plugin;
 			sourceTree = "<group>";
 		};
 		0929DC35234DD19300BD1A1A /* Rotate */ = {
@@ -570,8 +562,8 @@
 				094F0859218F3BB100445FEE /* LFUserCell.xib in Resources */,
 				09431632234C2108004C985B /* TestAudioVC.xib in Resources */,
 				0943162D234C20DD004C985B /* sing.mp3 in Resources */,
+				09D8D496241B74BE0052C75C /* indexa.js in Resources */,
 				6376F8722216C9D60005A1C4 /* YYCache_TestVC.xib in Resources */,
-				09113016236A79A00001A9E9 /* plugin.js in Resources */,
 				09431635234C42AA004C985B /* bullet.mp3 in Resources */,
 				631B0ADE21E8374D00CEBE60 /* UITextFieldTestVC.xib in Resources */,
 				09431636234C42AA004C985B /* boom.mp3 in Resources */,

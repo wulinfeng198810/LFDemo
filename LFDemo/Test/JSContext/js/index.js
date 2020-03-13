@@ -1,8 +1,8 @@
-require("./plugin/plugin")
 
-var cg_global_count = 1;
-console.log('index.js ' + cg_global_count++);
+function testFun(arg) {
+    return arg;
+}
 
-//setInterval(function() {
-//    console.log('index.js' + cg_global_count++);
-//}, 1000);
+
+
+

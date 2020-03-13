@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <YYKit.h>
-#import "TestFileDownloadTableVC.h"
+#import "JSContextTestVC.h"
 
 #define DY_APPSTORE 1
 
@@ -29,9 +29,9 @@
 }
 
 - (IBAction)testAction:(id)sender {
-    UIViewController *vc = [[TestFileDownloadTableVC alloc] initWithNibName:@"TestFileDownloadTableVC" bundle:NSBundle.mainBundle];
-//    [self.navigationController pushViewController:NSClassFromString(@"UITextFieldViewTestVC").new animated:YES];
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController *vc = [[TestFileDownloadTableVC alloc] initWithNibName:@"TestFileDownloadTableVC" bundle:NSBundle.mainBundle];
+    [self.navigationController pushViewController:NSClassFromString(@"JSContextTestVC").new animated:YES];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
