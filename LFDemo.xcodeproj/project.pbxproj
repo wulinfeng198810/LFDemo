@@ -40,6 +40,7 @@
 		09CCD5B72363E3680050AD8D /* NSString+ACObfuscation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5B52363E3680050AD8D /* NSString+ACObfuscation.m */; };
 		09D8D496241B74BE0052C75C /* indexa.js in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D495241B74BE0052C75C /* indexa.js */; };
 		09D9CF682410F1D100DFF038 /* CGHDownloadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D9CF672410F1D100DFF038 /* CGHDownloadUtil.m */; };
+		09DB2300242080A500965F0A /* CGHJSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DB22FF242080A500965F0A /* CGHJSTimer.m */; };
 		09EB59E42351C0A90047E031 /* CGHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EB59E32351C0A90047E031 /* CGHNavigationController.m */; };
 		09F0A2A324125AFF00A3C815 /* TestFileDownloadTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F0A2A124125AFF00A3C815 /* TestFileDownloadTableVC.m */; };
 		09F0A2A424125AFF00A3C815 /* TestFileDownloadTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F0A2A224125AFF00A3C815 /* TestFileDownloadTableVC.xib */; };
@@ -135,6 +136,8 @@
 		09D8D495241B74BE0052C75C /* indexa.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = indexa.js; sourceTree = "<group>"; };
 		09D9CF662410F1D100DFF038 /* CGHDownloadUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHDownloadUtil.h; sourceTree = "<group>"; };
 		09D9CF672410F1D100DFF038 /* CGHDownloadUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHDownloadUtil.m; sourceTree = "<group>"; };
+		09DB22FE242080A500965F0A /* CGHJSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHJSTimer.h; sourceTree = "<group>"; };
+		09DB22FF242080A500965F0A /* CGHJSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHJSTimer.m; sourceTree = "<group>"; };
 		09EB59E22351C0A90047E031 /* CGHNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHNavigationController.h; sourceTree = "<group>"; };
 		09EB59E32351C0A90047E031 /* CGHNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHNavigationController.m; sourceTree = "<group>"; };
 		09F0A2A024125AFF00A3C815 /* TestFileDownloadTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFileDownloadTableVC.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 			children = (
 				0911300F236A76340001A9E9 /* JSContextTestVC.h */,
 				09113010236A76340001A9E9 /* JSContextTestVC.m */,
+				09DB22FE242080A500965F0A /* CGHJSTimer.h */,
+				09DB22FF242080A500965F0A /* CGHJSTimer.m */,
 				09113012236A79A00001A9E9 /* js */,
 			);
 			path = JSContext;
@@ -683,6 +688,7 @@
 				094F0824218F1DB000445FEE /* main.m in Sources */,
 				6311B70C21EED7620058F650 /* ErrorImageTestVC.m in Sources */,
 				094F0854218F3B9300445FEE /* LFOptimazeTableVC.m in Sources */,
+				09DB2300242080A500965F0A /* CGHJSTimer.m in Sources */,
 				094F0858218F3BB100445FEE /* LFUserCell.m in Sources */,
 				09F0A2A824125B7400A3C815 /* FileDownloadCell.m in Sources */,
 				09F0A2A324125AFF00A3C815 /* TestFileDownloadTableVC.m in Sources */,

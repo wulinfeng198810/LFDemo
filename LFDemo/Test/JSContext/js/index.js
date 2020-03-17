@@ -1,4 +1,8 @@
 
+function log() {
+    console.log(123);
+}
+
 function testFun(arg) {
     return arg;
 }
