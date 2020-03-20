@@ -14,6 +14,7 @@
 		0929DC39234DD1BC00BD1A1A /* TestRotateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929DC37234DD1BC00BD1A1A /* TestRotateController.m */; };
 		0929DC3A234DD1BC00BD1A1A /* TestRotateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0929DC38234DD1BC00BD1A1A /* TestRotateController.xib */; };
 		092DCB2D2366D516004A13B5 /* adver.png in Resources */ = {isa = PBXBuildFile; fileRef = 092DCB2C2366D516004A13B5 /* adver.png */; };
+		092EFCA32423218E00BC73E1 /* CGHContactUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 092EFCA22423218E00BC73E1 /* CGHContactUtil.m */; };
 		0943162D234C20DD004C985B /* sing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0943162C234C20DD004C985B /* sing.mp3 */; };
 		09431631234C2108004C985B /* TestAudioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0943162F234C2108004C985B /* TestAudioVC.m */; };
 		09431632234C2108004C985B /* TestAudioVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09431630234C2108004C985B /* TestAudioVC.xib */; };
@@ -92,6 +93,8 @@
 		0929DC37234DD1BC00BD1A1A /* TestRotateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRotateController.m; sourceTree = "<group>"; };
 		0929DC38234DD1BC00BD1A1A /* TestRotateController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRotateController.xib; sourceTree = "<group>"; };
 		092DCB2C2366D516004A13B5 /* adver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adver.png; sourceTree = "<group>"; };
+		092EFC9E2423087100BC73E1 /* CGHContactsUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHContactsUtil.h; sourceTree = "<group>"; };
+		092EFCA22423218E00BC73E1 /* CGHContactUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHContactUtil.m; sourceTree = "<group>"; };
 		0943162C234C20DD004C985B /* sing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sing.mp3; sourceTree = "<group>"; };
 		0943162E234C2108004C985B /* TestAudioVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAudioVC.h; sourceTree = "<group>"; };
 		0943162F234C2108004C985B /* TestAudioVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAudioVC.m; sourceTree = "<group>"; };
@@ -233,6 +236,15 @@
 			path = Rotate;
 			sourceTree = "<group>";
 		};
+		092EFC9D242306B700BC73E1 /* SelectContact */ = {
+			isa = PBXGroup;
+			children = (
+				092EFC9E2423087100BC73E1 /* CGHContactsUtil.h */,
+				092EFCA22423218E00BC73E1 /* CGHContactUtil.m */,
+			);
+			path = SelectContact;
+			sourceTree = "<group>";
+		};
 		0943162B234C2085004C985B /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +321,7 @@
 		094F0850218F3B6700445FEE /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				092EFC9D242306B700BC73E1 /* SelectContact */,
 				09E2DC0D240F385C00CD9853 /* FileDownload */,
 				0911300E236A760C0001A9E9 /* JSContext */,
 				0929DC35234DD19300BD1A1A /* Rotate */,
@@ -699,6 +712,7 @@
 				09CCD5B72363E3680050AD8D /* NSString+ACObfuscation.m in Sources */,
 				09D9CF682410F1D100DFF038 /* CGHDownloadUtil.m in Sources */,
 				631B0ADD21E8374D00CEBE60 /* UITextFieldTestVC.m in Sources */,
+				092EFCA32423218E00BC73E1 /* CGHContactUtil.m in Sources */,
 				094F0816218F1DAC00445FEE /* AppDelegate.m in Sources */,
 				09CCD5AF2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m in Sources */,
 			);
