@@ -19,50 +19,94 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-4m-hC9">
-                    <rect key="frame" x="30" y="114" width="354" height="50"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="30" y="602" width="354" height="50"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="SKL-OM-4yr"/>
                     </constraints>
-                    <state key="normal" title="播放"/>
+                    <state key="normal" title="src"/>
                     <connections>
                         <action selector="play:" destination="-1" eventType="touchUpInside" id="2qb-J9-BUs"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E2-fP-U36">
-                    <rect key="frame" x="30" y="224" width="354" height="50"/>
-                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="30" y="682" width="354" height="50"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="zeY-sD-4Od"/>
                     </constraints>
-                    <state key="normal" title="seek"/>
+                    <state key="normal" title="play"/>
                     <connections>
                         <action selector="seek:" destination="-1" eventType="touchUpInside" id="0u1-9X-0vh"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkA-Lt-57O">
-                    <rect key="frame" x="30" y="341" width="354" height="50"/>
-                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="30" y="762" width="354" height="50"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="oz9-Eg-jvj"/>
                     </constraints>
-                    <state key="normal" title="暂停"/>
+                    <state key="normal" title="pause"/>
                     <connections>
                         <action selector="pause:" destination="-1" eventType="touchUpInside" id="LFM-SO-m9Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-2U-J7P">
+                    <rect key="frame" x="20" y="90" width="200" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="startRecord">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="startRecord:" destination="-1" eventType="touchUpInside" id="Ort-bm-9Iv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaW-rK-V1o">
+                    <rect key="frame" x="20" y="163" width="200" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="pause">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="pauseRecord:" destination="-1" eventType="touchUpInside" id="tvv-RT-62u"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAw-jq-Fjv">
+                    <rect key="frame" x="20" y="243" width="200" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="resume">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="resumeRecord:" destination="-1" eventType="touchUpInside" id="tx4-XK-9l0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lG-uU-PHP">
+                    <rect key="frame" x="20" y="317" width="200" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="stop">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="stopRecord:" destination="-1" eventType="touchUpInside" id="ztG-J6-LQL"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="mkA-Lt-57O" secondAttribute="bottom" constant="50" id="1be-CZ-AAf"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="mkA-Lt-57O" secondAttribute="trailing" constant="30" id="3KD-66-1b6"/>
-                <constraint firstItem="9E2-fP-U36" firstAttribute="top" secondItem="RCc-4m-hC9" secondAttribute="bottom" constant="60" id="Vep-Qq-VMu"/>
-                <constraint firstItem="RCc-4m-hC9" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="70" id="Xsq-Nd-TD6"/>
+                <constraint firstItem="9E2-fP-U36" firstAttribute="top" secondItem="RCc-4m-hC9" secondAttribute="bottom" constant="30" id="Vep-Qq-VMu"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RCc-4m-hC9" secondAttribute="trailing" constant="30" id="k41-3H-OBI"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9E2-fP-U36" secondAttribute="trailing" constant="30" id="q38-ea-Q8H"/>
                 <constraint firstItem="9E2-fP-U36" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="sXC-jx-iIm"/>
                 <constraint firstItem="mkA-Lt-57O" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="tRS-On-Dms"/>
                 <constraint firstItem="RCc-4m-hC9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="vaq-sH-kVf"/>
-                <constraint firstItem="mkA-Lt-57O" firstAttribute="top" secondItem="9E2-fP-U36" secondAttribute="bottom" constant="67" id="x42-oE-HDg"/>
+                <constraint firstItem="mkA-Lt-57O" firstAttribute="top" secondItem="9E2-fP-U36" secondAttribute="bottom" constant="30" id="x42-oE-HDg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="132" y="154"/>

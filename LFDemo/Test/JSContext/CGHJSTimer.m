@@ -73,7 +73,7 @@
     if (!identifier) { return; }
     NSTimer *timer = self.timersMap[identifier];
     [self.timersMap removeObjectForKey:identifier];
-    if (timer) {
+    if (timer.isValid) {
         [timer invalidate];
     }
 }
@@ -85,20 +85,26 @@
     Unlock();
     
     NSDate *fireDate = [NSDate dateWithTimeIntervalSinceNow:timeInterval];
-    NSTimer *timer = [[NSTimer alloc] initWithFireDate:fireDate interval:timeInterval target:self selector:@selector(_callJsCallback:) userInfo:callback repeats:repeats];
+    NSTimer *timer = [[NSTimer alloc] initWithFireDate:fireDate interval:timeInterval target:self selector:@selector(_callJsCallback:) userInfo:@{@"value":callback, @"timerId":uuid, @"repeats":@(repeats)} repeats:repeats];
     //[timer fire];//不能调用fire，否则定时器立刻执行
     //[NSRunLoop currentRunLoop] 非 mainRunLoop 时，timer不跑
-    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     self.timersMap[uuid] = timer;
     return uuid;
 }
 
 - (void)_callJsCallback:(NSTimer *)timer {
-    JSValue *callback = (JSValue *)timer.userInfo;
+    NSDictionary *userInfo = timer.userInfo;
+    JSValue *callback = (JSValue *)(userInfo[@"value"]);
+    NSNumber *repeats = (NSNumber *)(userInfo[@"repeats"]);
     if ([callback isString]) { //setInterval("console.log(111111)", 1000);
         [callback.context evaluateScript:callback.description];
     } else { //setInterval(fun, 1000);
         [callback callWithArguments:nil];
+    }
+    if (![repeats boolValue]) { //setTimeout直接移除
+        NSString *timerId = (NSString *)(userInfo[@"timerId"]);
+        [self _invalidate:timerId];
     }
 }
 

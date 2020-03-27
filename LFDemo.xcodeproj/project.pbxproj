@@ -36,6 +36,7 @@
 		095A59212366A3B700A5207B /* 灵魂匹配.png in Resources */ = {isa = PBXBuildFile; fileRef = 095A59202366A3B700A5207B /* 灵魂匹配.png */; };
 		0979BB5A233315A900ECCE27 /* CGHWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0979BB58233315A900ECCE27 /* CGHWebController.m */; };
 		0979BB5D2333209B00ECCE27 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0979BB5C2333209B00ECCE27 /* index.html */; };
+		09ADCD10242D912B0086FCEA /* CGHRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ADCD0F242D912B0086FCEA /* CGHRecorderUtil.m */; };
 		09CCD5AF2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5AE2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m */; };
 		09CCD5B62363E3680050AD8D /* NSURLProtocol+WebKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5B22363E3680050AD8D /* NSURLProtocol+WebKitSupport.m */; };
 		09CCD5B72363E3680050AD8D /* NSString+ACObfuscation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5B52363E3680050AD8D /* NSString+ACObfuscation.m */; };
@@ -47,7 +48,11 @@
 		09F0A2A424125AFF00A3C815 /* TestFileDownloadTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F0A2A224125AFF00A3C815 /* TestFileDownloadTableVC.xib */; };
 		09F0A2A824125B7400A3C815 /* FileDownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F0A2A624125B7400A3C815 /* FileDownloadCell.m */; };
 		09F0A2A924125B7400A3C815 /* FileDownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F0A2A724125B7400A3C815 /* FileDownloadCell.xib */; };
-		09F3325B23B35469009022B6 /* CGHAudioStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F3325923B35469009022B6 /* CGHAudioStateManager.m */; };
+		09F4EDD7242C3B4C00A09854 /* CGHAudioStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F4EDD4242C3B4B00A09854 /* CGHAudioStateManager.m */; };
+		09F4EDD8242C3B4C00A09854 /* CGHAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F4EDD5242C3B4B00A09854 /* CGHAudioPlayer.m */; };
+		09F4EDDB242C3BCB00A09854 /* CGHBaseModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F4EDDA242C3BCB00A09854 /* CGHBaseModuleManager.m */; };
+		09F4EDE1242C3FF200A09854 /* CGHRecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F4EDDF242C3FF200A09854 /* CGHRecorderManager.m */; };
+		09F4EDE6242C451100A09854 /* CGHRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F4EDE5242C451100A09854 /* CGHRecorder.m */; };
 		09F8C84322FA737700981657 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F8C84222FA737700981657 /* WebKit.framework */; };
 		540A978DB89788E24D2BFD5C /* libPods-LFDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B5E6C33FAF4A7E123D9CBA /* libPods-LFDemoUITests.a */; };
 		6311B70C21EED7620058F650 /* ErrorImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6311B70A21EED7620058F650 /* ErrorImageTestVC.m */; };
@@ -129,6 +134,8 @@
 		0979BB57233315A900ECCE27 /* CGHWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CGHWebController.h; path = "../../../../../../../../System/Volumes/Data/Users/wulinfeng/iOS开发/Sourcetree/LFDemo/LFDemo/Test/Web/CGHWebController.h"; sourceTree = "<group>"; };
 		0979BB58233315A900ECCE27 /* CGHWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CGHWebController.m; path = "../../../../../../../../System/Volumes/Data/Users/wulinfeng/iOS开发/Sourcetree/LFDemo/LFDemo/Test/Web/CGHWebController.m"; sourceTree = "<group>"; };
 		0979BB5C2333209B00ECCE27 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		09ADCD0E242D912B0086FCEA /* CGHRecorderUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHRecorderUtil.h; sourceTree = "<group>"; };
+		09ADCD0F242D912B0086FCEA /* CGHRecorderUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHRecorderUtil.m; sourceTree = "<group>"; };
 		09CCD5AD2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHWebSocketServerURLProtocol.h; sourceTree = "<group>"; };
 		09CCD5AE2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHWebSocketServerURLProtocol.m; sourceTree = "<group>"; };
 		09CCD5B22363E3680050AD8D /* NSURLProtocol+WebKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+WebKitSupport.m"; sourceTree = "<group>"; };
@@ -149,8 +156,16 @@
 		09F0A2A524125B7400A3C815 /* FileDownloadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDownloadCell.h; sourceTree = "<group>"; };
 		09F0A2A624125B7400A3C815 /* FileDownloadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloadCell.m; sourceTree = "<group>"; };
 		09F0A2A724125B7400A3C815 /* FileDownloadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileDownloadCell.xib; sourceTree = "<group>"; };
-		09F3325923B35469009022B6 /* CGHAudioStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHAudioStateManager.m; sourceTree = "<group>"; };
-		09F3325A23B35469009022B6 /* CGHAudioStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHAudioStateManager.h; sourceTree = "<group>"; };
+		09F4EDD3242C3B4B00A09854 /* CGHAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHAudioPlayer.h; sourceTree = "<group>"; };
+		09F4EDD4242C3B4B00A09854 /* CGHAudioStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHAudioStateManager.m; sourceTree = "<group>"; };
+		09F4EDD5242C3B4B00A09854 /* CGHAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHAudioPlayer.m; sourceTree = "<group>"; };
+		09F4EDD6242C3B4B00A09854 /* CGHAudioStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHAudioStateManager.h; sourceTree = "<group>"; };
+		09F4EDD9242C3BCA00A09854 /* CGHBaseModuleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHBaseModuleManager.h; sourceTree = "<group>"; };
+		09F4EDDA242C3BCB00A09854 /* CGHBaseModuleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHBaseModuleManager.m; sourceTree = "<group>"; };
+		09F4EDDE242C3FF200A09854 /* CGHRecorderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHRecorderManager.h; sourceTree = "<group>"; };
+		09F4EDDF242C3FF200A09854 /* CGHRecorderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHRecorderManager.m; sourceTree = "<group>"; };
+		09F4EDE4242C451100A09854 /* CGHRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHRecorder.h; sourceTree = "<group>"; };
+		09F4EDE5242C451100A09854 /* CGHRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHRecorder.m; sourceTree = "<group>"; };
 		09F8C84222FA737700981657 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		0DAFC32F3BFFA1488E94CD21 /* Pods-LFDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFDemoUITests/Pods-LFDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		38B5E6C33FAF4A7E123D9CBA /* libPods-LFDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,14 +263,16 @@
 		0943162B234C2085004C985B /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				09F4EDE3242C40C800A09854 /* audio */,
+				09F4EDDC242C3FEA00A09854 /* record */,
 				0943162C234C20DD004C985B /* sing.mp3 */,
 				09431634234C42AA004C985B /* boom.mp3 */,
 				09431633234C42AA004C985B /* bullet.mp3 */,
 				0943162E234C2108004C985B /* TestAudioVC.h */,
 				0943162F234C2108004C985B /* TestAudioVC.m */,
 				09431630234C2108004C985B /* TestAudioVC.xib */,
-				09F3325A23B35469009022B6 /* CGHAudioStateManager.h */,
-				09F3325923B35469009022B6 /* CGHAudioStateManager.m */,
+				09F4EDD9242C3BCA00A09854 /* CGHBaseModuleManager.h */,
+				09F4EDDA242C3BCB00A09854 /* CGHBaseModuleManager.m */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -402,6 +419,30 @@
 				09F0A2A724125B7400A3C815 /* FileDownloadCell.xib */,
 			);
 			path = FileDownload;
+			sourceTree = "<group>";
+		};
+		09F4EDDC242C3FEA00A09854 /* record */ = {
+			isa = PBXGroup;
+			children = (
+				09F4EDE4242C451100A09854 /* CGHRecorder.h */,
+				09F4EDE5242C451100A09854 /* CGHRecorder.m */,
+				09F4EDDE242C3FF200A09854 /* CGHRecorderManager.h */,
+				09F4EDDF242C3FF200A09854 /* CGHRecorderManager.m */,
+				09ADCD0E242D912B0086FCEA /* CGHRecorderUtil.h */,
+				09ADCD0F242D912B0086FCEA /* CGHRecorderUtil.m */,
+			);
+			path = record;
+			sourceTree = "<group>";
+		};
+		09F4EDE3242C40C800A09854 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				09F4EDD3242C3B4B00A09854 /* CGHAudioPlayer.h */,
+				09F4EDD5242C3B4B00A09854 /* CGHAudioPlayer.m */,
+				09F4EDD6242C3B4B00A09854 /* CGHAudioStateManager.h */,
+				09F4EDD4242C3B4B00A09854 /* CGHAudioStateManager.m */,
+			);
+			path = audio;
 			sourceTree = "<group>";
 		};
 		6311B70821EED7190058F650 /* ErrorImage */ = {
@@ -688,6 +729,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F4EDD8242C3B4C00A09854 /* CGHAudioPlayer.m in Sources */,
 				094F085E218F45CA00445FEE /* YYFPSLabel.m in Sources */,
 				094F0819218F1DAC00445FEE /* ViewController.m in Sources */,
 				63D115F121CDEF5600E35504 /* LFTextShowAllVC.m in Sources */,
@@ -696,6 +738,7 @@
 				0929DC39234DD1BC00BD1A1A /* TestRotateController.m in Sources */,
 				09232DED241098B6006B1ECB /* CGHDownloadManager.m in Sources */,
 				0979BB5A233315A900ECCE27 /* CGHWebController.m in Sources */,
+				09F4EDE6242C451100A09854 /* CGHRecorder.m in Sources */,
 				09EB59E42351C0A90047E031 /* CGHNavigationController.m in Sources */,
 				6376F8712216C9D60005A1C4 /* YYCache_TestVC.m in Sources */,
 				094F0824218F1DB000445FEE /* main.m in Sources */,
@@ -704,12 +747,15 @@
 				09DB2300242080A500965F0A /* CGHJSTimer.m in Sources */,
 				094F0858218F3BB100445FEE /* LFUserCell.m in Sources */,
 				09F0A2A824125B7400A3C815 /* FileDownloadCell.m in Sources */,
+				09ADCD10242D912B0086FCEA /* CGHRecorderUtil.m in Sources */,
 				09F0A2A324125AFF00A3C815 /* TestFileDownloadTableVC.m in Sources */,
 				09431631234C2108004C985B /* TestAudioVC.m in Sources */,
 				09232DF3241099E1006B1ECB /* CGHDownloadTask.m in Sources */,
-				09F3325B23B35469009022B6 /* CGHAudioStateManager.m in Sources */,
 				6376F8752216CA080005A1C4 /* DYCircleCacheHelper.m in Sources */,
 				09CCD5B72363E3680050AD8D /* NSString+ACObfuscation.m in Sources */,
+				09F4EDD7242C3B4C00A09854 /* CGHAudioStateManager.m in Sources */,
+				09F4EDDB242C3BCB00A09854 /* CGHBaseModuleManager.m in Sources */,
+				09F4EDE1242C3FF200A09854 /* CGHRecorderManager.m in Sources */,
 				09D9CF682410F1D100DFF038 /* CGHDownloadUtil.m in Sources */,
 				631B0ADD21E8374D00CEBE60 /* UITextFieldTestVC.m in Sources */,
 				092EFCA32423218E00BC73E1 /* CGHContactUtil.m in Sources */,

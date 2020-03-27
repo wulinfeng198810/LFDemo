@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "CGHManagerProtocol.h"
+#import "CGHBaseModuleManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CGHAudioStateManager : NSObject
-//@property (nonatomic, weak) id<CGHManagerProtocol> delegate;
-- (instancetype)initWithDelegate:(id)delegate;
+@interface CGHAudioStateManager : CGHBaseModuleManager
+
 - (NSUInteger)distributeTaskId;
 
-- (void)createAudioInstance:(NSDictionary *)args callback:(void(^)(BOOL isSuccess))callback;
+- (BOOL)createAudioInstance:(NSDictionary *)args;
 
 - (void)destroyAudioInstance:(NSDictionary *)args callback:(void(^)(BOOL isSuccess))callback;
 
