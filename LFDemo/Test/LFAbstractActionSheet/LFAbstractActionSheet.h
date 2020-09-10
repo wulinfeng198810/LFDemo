@@ -8,18 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@protocol LFAbstractActionSheetProtocol <NSObject>
+- (UIView *)configuredContentView;
+- (void)didDone;
+- (void)didCancel;
+@end
 
-@interface LFAbstractActionSheet : UIView
+@interface LFAbstractActionSheet : UIView <LFAbstractActionSheetProtocol>
 @property (nonatomic, assign) BOOL isAddCorner;
+@property(nonatomic) NSMutableDictionary *pickerTextAttributes;
 @property (readonly) UIButton *cancelBtn;
 @property (readonly) UIButton *doneBtn;
 @property (readonly) UIView *contentView;
 
-- (void)show:(UIView *)content inContainer:(UIView *)inContainer;
+- (void)showInContainer:(UIView *)inContainer;
 
 - (void)dismiss:(BOOL)animated;
 
 @end
-
-NS_ASSUME_NONNULL_END

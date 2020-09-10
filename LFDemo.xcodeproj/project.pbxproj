@@ -19,6 +19,9 @@
 		092DCB2D2366D516004A13B5 /* adver.png in Resources */ = {isa = PBXBuildFile; fileRef = 092DCB2C2366D516004A13B5 /* adver.png */; };
 		092EFCA32423218E00BC73E1 /* CGHContactUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 092EFCA22423218E00BC73E1 /* CGHContactUtil.m */; };
 		09321A032509BDD3007D0D1C /* LFAbstractActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 09321A022509BDD3007D0D1C /* LFAbstractActionSheet.m */; };
+		09321A072509D46A007D0D1C /* LFStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09321A062509D46A007D0D1C /* LFStringPicker.m */; };
+		09321A0A2509D488007D0D1C /* LFMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09321A092509D488007D0D1C /* LFMultipleStringPicker.m */; };
+		09321A0D2509D4A2007D0D1C /* LFDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09321A0C2509D4A2007D0D1C /* LFDatePicker.m */; };
 		093DEBC024318313009882DE /* startExcited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 093DEBBF24318313009882DE /* startExcited.mp3 */; };
 		0943162D234C20DD004C985B /* sing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0943162C234C20DD004C985B /* sing.mp3 */; };
 		09431631234C2108004C985B /* TestAudioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0943162F234C2108004C985B /* TestAudioVC.m */; };
@@ -45,6 +48,7 @@
 		096436F02451512E0084B880 /* CGHInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096436EF2451512E0084B880 /* CGHInputView.m */; };
 		0979BB5A233315A900ECCE27 /* CGHWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0979BB58233315A900ECCE27 /* CGHWebController.m */; };
 		0979BB5D2333209B00ECCE27 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0979BB5C2333209B00ECCE27 /* index.html */; };
+		099522FE250A0ED60047EC1D /* LFCustomDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 099522FD250A0ED60047EC1D /* LFCustomDatePicker.m */; };
 		09ADCD10242D912B0086FCEA /* CGHRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ADCD0F242D912B0086FCEA /* CGHRecorderUtil.m */; };
 		09D8D496241B74BE0052C75C /* indexa.js in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D495241B74BE0052C75C /* indexa.js */; };
 		09D9CF682410F1D100DFF038 /* CGHDownloadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D9CF672410F1D100DFF038 /* CGHDownloadUtil.m */; };
@@ -112,6 +116,12 @@
 		092EFCA22423218E00BC73E1 /* CGHContactUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHContactUtil.m; sourceTree = "<group>"; };
 		09321A012509BDD3007D0D1C /* LFAbstractActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFAbstractActionSheet.h; sourceTree = "<group>"; };
 		09321A022509BDD3007D0D1C /* LFAbstractActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFAbstractActionSheet.m; sourceTree = "<group>"; };
+		09321A052509D46A007D0D1C /* LFStringPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFStringPicker.h; sourceTree = "<group>"; };
+		09321A062509D46A007D0D1C /* LFStringPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFStringPicker.m; sourceTree = "<group>"; };
+		09321A082509D488007D0D1C /* LFMultipleStringPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFMultipleStringPicker.h; sourceTree = "<group>"; };
+		09321A092509D488007D0D1C /* LFMultipleStringPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFMultipleStringPicker.m; sourceTree = "<group>"; };
+		09321A0B2509D4A2007D0D1C /* LFDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFDatePicker.h; sourceTree = "<group>"; };
+		09321A0C2509D4A2007D0D1C /* LFDatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFDatePicker.m; sourceTree = "<group>"; };
 		0933790A247D1CCB002152B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0933790B247D1CCC002152B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0933790C247D1CEF002152B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
@@ -156,6 +166,8 @@
 		0979BB57233315A900ECCE27 /* CGHWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CGHWebController.h; path = "../../../../../../../../System/Volumes/Data/Users/wulinfeng/iOS开发/Sourcetree/LFDemo/LFDemo/Test/Web/CGHWebController.h"; sourceTree = "<group>"; };
 		0979BB58233315A900ECCE27 /* CGHWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CGHWebController.m; path = "../../../../../../../../System/Volumes/Data/Users/wulinfeng/iOS开发/Sourcetree/LFDemo/LFDemo/Test/Web/CGHWebController.m"; sourceTree = "<group>"; };
 		0979BB5C2333209B00ECCE27 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		099522FC250A0ED60047EC1D /* LFCustomDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFCustomDatePicker.h; sourceTree = "<group>"; };
+		099522FD250A0ED60047EC1D /* LFCustomDatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFCustomDatePicker.m; sourceTree = "<group>"; };
 		09ADCD0E242D912B0086FCEA /* CGHRecorderUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHRecorderUtil.h; sourceTree = "<group>"; };
 		09ADCD0F242D912B0086FCEA /* CGHRecorderUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHRecorderUtil.m; sourceTree = "<group>"; };
 		09D8D495241B74BE0052C75C /* indexa.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = indexa.js; sourceTree = "<group>"; };
@@ -284,13 +296,21 @@
 			path = SelectContact;
 			sourceTree = "<group>";
 		};
-		09321A002509BA7F007D0D1C /* Picker */ = {
+		09321A002509BA7F007D0D1C /* LFAbstractActionSheet */ = {
 			isa = PBXGroup;
 			children = (
 				09321A012509BDD3007D0D1C /* LFAbstractActionSheet.h */,
 				09321A022509BDD3007D0D1C /* LFAbstractActionSheet.m */,
+				09321A052509D46A007D0D1C /* LFStringPicker.h */,
+				09321A062509D46A007D0D1C /* LFStringPicker.m */,
+				09321A082509D488007D0D1C /* LFMultipleStringPicker.h */,
+				09321A092509D488007D0D1C /* LFMultipleStringPicker.m */,
+				09321A0B2509D4A2007D0D1C /* LFDatePicker.h */,
+				09321A0C2509D4A2007D0D1C /* LFDatePicker.m */,
+				099522FC250A0ED60047EC1D /* LFCustomDatePicker.h */,
+				099522FD250A0ED60047EC1D /* LFCustomDatePicker.m */,
 			);
-			path = Picker;
+			path = LFAbstractActionSheet;
 			sourceTree = "<group>";
 		};
 		0943162B234C2085004C985B /* Audio */ = {
@@ -374,7 +394,7 @@
 		094F0850218F3B6700445FEE /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				09321A002509BA7F007D0D1C /* Picker */,
+				09321A002509BA7F007D0D1C /* LFAbstractActionSheet */,
 				096436E524514D7B0084B880 /* Keyboard */,
 				092EFC9D242306B700BC73E1 /* SelectContact */,
 				09E2DC0D240F385C00CD9853 /* FileDownload */,
@@ -791,6 +811,8 @@
 				0979BB5A233315A900ECCE27 /* CGHWebController.m in Sources */,
 				09F4EDE6242C451100A09854 /* CGHRecorder.m in Sources */,
 				09EB59E42351C0A90047E031 /* CGHNavigationController.m in Sources */,
+				09321A0D2509D4A2007D0D1C /* LFDatePicker.m in Sources */,
+				09321A072509D46A007D0D1C /* LFStringPicker.m in Sources */,
 				6376F8712216C9D60005A1C4 /* YYCache_TestVC.m in Sources */,
 				094F0824218F1DB000445FEE /* main.m in Sources */,
 				6311B70C21EED7620058F650 /* ErrorImageTestVC.m in Sources */,
@@ -806,9 +828,11 @@
 				6376F8752216CA080005A1C4 /* DYCircleCacheHelper.m in Sources */,
 				09F4EDD7242C3B4C00A09854 /* CGHAudioStateManager.m in Sources */,
 				096436ED24514DFC0084B880 /* CGHKeyboardManager.m in Sources */,
+				099522FE250A0ED60047EC1D /* LFCustomDatePicker.m in Sources */,
 				09F4EDDB242C3BCB00A09854 /* CGHBaseModuleManager.m in Sources */,
 				092A66AA2452D12C0006D05B /* CGHWebSocketManager.m in Sources */,
 				09F4EDE1242C3FF200A09854 /* CGHRecorderManager.m in Sources */,
+				09321A0A2509D488007D0D1C /* LFMultipleStringPicker.m in Sources */,
 				09D9CF682410F1D100DFF038 /* CGHDownloadUtil.m in Sources */,
 				631B0ADD21E8374D00CEBE60 /* UITextFieldTestVC.m in Sources */,
 				092EFCA32423218E00BC73E1 /* CGHContactUtil.m in Sources */,

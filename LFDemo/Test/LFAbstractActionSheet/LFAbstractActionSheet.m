@@ -34,6 +34,17 @@
 @end
 
 @implementation LFAbstractActionSheet
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSMutableParagraphStyle *labelParagraphStyle = [[NSMutableParagraphStyle alloc] init];
+        labelParagraphStyle.alignment = NSTextAlignmentCenter;
+        self.pickerTextAttributes = [@{NSParagraphStyleAttributeName : labelParagraphStyle} mutableCopy];
+    }
+    return self;
+}
+
 - (CGFloat)contentViewHeight {
     return kSafeBottomHeight+self.toolbarHeight+self.contentHeight;
 }
@@ -97,60 +108,6 @@
     self.contentBgView.layer.mask = maskLayer;
 }
 
-#pragma mark - show / dismiss
-- (void)show:(UIView *)content inContainer:(UIView *)inContainer {
-    [inContainer addSubview:self];
-    self.frame = CGRectMake(0, 0, inContainer.frame.size.width, inContainer.frame.size.height);
-    self.contentView = content;
-    self.toolbarHeight = 40;
-    self.contentHeight = CGRectGetMaxY(content.frame);
-    [self setupSubviews];
-    [self _showOrDismiss:YES];
-}
-
-- (void)dismiss:(BOOL)animated {
-    if (!animated) {
-        [self removeFromSuperview];
-        return;
-    }
-    
-    [self _showOrDismiss:NO];
-}
-
-- (void)_showOrDismiss:(BOOL)isShow {
-    //动画前
-    isShow ? [self __dissmiss] : [self __show];
-    [self layoutIfNeeded];
-    
-    //动画后
-    [self setNeedsUpdateConstraints];
-    [self updateConstraintsIfNeeded];
-    [UIView animateWithDuration:0.25 animations: ^{
-        isShow ? [self __show] : [self __dissmiss];
-        [self layoutIfNeeded];
-    } completion:^(BOOL finished) {
-        if (!isShow) {
-            [self removeFromSuperview];
-        }
-    }];
-}
-
-- (void)__show {
-    self.blurView.alpha = 0.2;
-    
-    [self.contentBgView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self);
-    }];
-}
-
-- (void)__dissmiss {
-    self.blurView.alpha = 0;
-    
-    [self.contentBgView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self).offset([self contentViewHeight]);
-    }];
-}
-
 #pragma mark - lazy
 - (UIView *)blurView {
     if (!_blurView) {
@@ -212,15 +169,85 @@
 
 #pragma mark - actions
 - (void)tapBlurAction {
-    [self dismiss:YES];
+    [self clickCancelBtn];
 }
 
 - (void)clickCancelBtn {
+    [self didCancel];
     [self dismiss:YES];
 }
 
 - (void)clickDoneBtn {
-    [self dismiss:NO];
+    [self didDone];
+    [self dismiss:YES];
+}
+
+#pragma mark - show / dismiss
+- (void)showInContainer:(UIView *)inContainer {
+    [inContainer addSubview:self];
+    self.frame = CGRectMake(0, 0, inContainer.frame.size.width, inContainer.frame.size.height);
+    self.contentView = [self configuredContentView];
+    self.toolbarHeight = 40;
+    self.contentHeight = CGRectGetMaxY(self.contentView.frame);
+    [self setupSubviews];
+    [self _showOrDismiss:YES];
+}
+
+- (void)dismiss:(BOOL)animated {
+    if (!animated) {
+        [self removeFromSuperview];
+        return;
+    }
+    
+    [self _showOrDismiss:NO];
+}
+
+- (void)_showOrDismiss:(BOOL)isShow {
+    //动画前
+    isShow ? [self __dissmiss] : [self __show];
+    [self layoutIfNeeded];
+    
+    //动画后
+    [self setNeedsUpdateConstraints];
+    [self updateConstraintsIfNeeded];
+    [UIView animateWithDuration:0.25 animations: ^{
+        isShow ? [self __show] : [self __dissmiss];
+        [self layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        if (!isShow) {
+            [self removeFromSuperview];
+        }
+    }];
+}
+
+- (void)__show {
+    self.blurView.alpha = 0.2;
+    
+    [self.contentBgView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self);
+    }];
+}
+
+- (void)__dissmiss {
+    self.blurView.alpha = 0;
+    
+    [self.contentBgView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self).offset([self contentViewHeight]);
+    }];
+}
+
+#pragma mark - LFAbstractActionSheetProtocol
+- (UIView *)configuredContentView {
+    NSAssert(NO, @"This is an abstract class, you must rewrite in a subclass");
+    return nil;
+}
+
+- (void)didDone {
+    NSAssert(NO, @"This is an abstract class, you must rewrite in a subclass");
+}
+
+- (void)didCancel {
+    NSAssert(NO, @"This is an abstract class, you must rewrite in a subclass");
 }
 
 @end
