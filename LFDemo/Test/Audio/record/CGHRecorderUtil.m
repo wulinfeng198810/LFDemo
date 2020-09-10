@@ -40,9 +40,9 @@
     }
     
     NSURL *outputURL = [NSURL fileURLWithPath:destPath];
-    AVAssetExportSession *assetExportSession = [AVAssetExportSession exportSessionWithAsset:mixComposition presetName:AVAssetExportPresetAppleM4A];
+    AVAssetExportSession *assetExportSession = [AVAssetExportSession exportSessionWithAsset:mixComposition presetName:AVAssetExportPresetPassthrough];
     assetExportSession.outputURL = outputURL;
-    assetExportSession.outputFileType = AVFileTypeAppleM4A;
+    assetExportSession.outputFileType = AVFileTypeWAVE;
     assetExportSession.shouldOptimizeForNetworkUse = YES;
     [assetExportSession exportAsynchronouslyWithCompletionHandler:^{
         switch (assetExportSession.status) {
@@ -89,7 +89,7 @@
     }
     [assetReader addOutput:assetReaderOutput];
     
-    AVAssetWriter *assetWriter = [AVAssetWriter assetWriterWithURL:destUrl fileType:AVFileTypeCoreAudioFormat error:&error];
+    AVAssetWriter *assetWriter = [AVAssetWriter assetWriterWithURL:destUrl fileType:AVFileTypeWAVE error:&error];
     if (error) {
         !completeHandler ?: completeHandler(error);
         return;

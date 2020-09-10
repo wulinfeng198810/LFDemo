@@ -11,7 +11,7 @@ target 'LFDemo' do
   pod 'SDWebImage', '~> 5.6.0'
   pod 'AFNetworking'
   pod 'CocoaAsyncSocket'
-  pod 'SocketRocket'
+  pod 'SocketRocket', '~> 0.5.1'
 
   
   target 'LFDemoTests' do

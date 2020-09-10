@@ -143,11 +143,6 @@
         *error = _err;
         return nil;
     }
-    BOOL prepare = [recorder prepareToRecord];
-    if (!prepare) {
-        *error = [NSError errorWithDomain:@"" code:-1 userInfo:@{NSLocalizedDescriptionKey: @"prepareToRecord error"}];
-        return nil;
-    }
     
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
     [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker error:&_err];
@@ -160,8 +155,16 @@
         *error = _err;
         return nil;
     }
-    recorder.delegate = self;
+    recorder.delegate = self; 
     recorder.meteringEnabled = YES;
+    
+    
+    BOOL prepare = [recorder prepareToRecord];
+    if (!prepare) {
+        *error = [NSError errorWithDomain:@"" code:-1 userInfo:@{NSLocalizedDescriptionKey: @"prepareToRecord error"}];
+        return nil;
+    }
+    
     BOOL startRecord = [recorder recordForDuration:duration];
     if (!startRecord) {
         *error = [NSError errorWithDomain:@"" code:-1 userInfo:@{NSLocalizedDescriptionKey: @"startRecord error"}];
@@ -190,7 +193,7 @@
 }
 
 - (NSString *)suggestedFilePath {
-    NSString *fileName = [NSString stringWithFormat:@"%d.m4a", self.tag];
+    NSString *fileName = [NSString stringWithFormat:@"%d.wav", self.tag];
     NSString *filePath = [self.tempDir stringByAppendingPathComponent:fileName];
     return filePath;
 }
@@ -202,13 +205,25 @@
 }
 
 - (NSDictionary *)defaultSettings {
-    NSDictionary *defaultSettings =
-    @{AVFormatIDKey:@(kAudioFormatMPEG4AAC),
-      AVSampleRateKey:@16000,
-      AVNumberOfChannelsKey:@1,
-      AVEncoderBitDepthHintKey:@16,
-      AVEncoderAudioQualityKey:@(AVAudioQualityMin)
-    };
+//    NSDictionary *defaultSettings =
+//    @{AVFormatIDKey:@(kAudioFormatMPEG4AAC),
+//      AVSampleRateKey:@16000,
+//      AVNumberOfChannelsKey:@1,
+//      AVEncoderBitDepthHintKey:@16,
+//      AVEncoderAudioQualityKey:@(AVAudioQualityMin)
+//    };
+    NSMutableDictionary *defaultSettings = @{}.mutableCopy;
+    defaultSettings[AVFormatIDKey] = @(kAudioFormatLinearPCM);
+        defaultSettings[AVSampleRateKey] = @16000;
+    //    recordSetting[AVNumberOfChannelsKey] = @2;
+        defaultSettings[AVNumberOfChannelsKey] = @1;
+        // Linear PCM Format Settings
+        defaultSettings[AVLinearPCMBitDepthKey] = @16;
+        defaultSettings[AVLinearPCMIsBigEndianKey] = @NO;
+        defaultSettings[AVLinearPCMIsFloatKey] = @NO;
+        // Encoder Settings
+        defaultSettings[AVEncoderAudioQualityKey] = @(AVAudioQualityMedium);
+        defaultSettings[AVEncoderBitRateKey] = @128000;
     return defaultSettings.mutableCopy;
 }
 
@@ -285,7 +300,7 @@
         return;
     }
     
-    NSString *mergePath = [self.tempDir stringByAppendingPathComponent:@"merge.m4a"];
+    NSString *mergePath = [self.tempDir stringByAppendingPathComponent:@"merge.wav"];
     [CGHRecorderUtil mergeAudios:filePaths toPath:mergePath completeHandler:^(NSError * _Nonnull error, NSURL * _Nonnull outputUrl) {
         if (error) {
             !completeHandler ?: completeHandler(error);

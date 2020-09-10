@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		09113011236A76340001A9E9 /* JSContextTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09113010236A76340001A9E9 /* JSContextTestVC.m */; };
 		09113017236A79A00001A9E9 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 09113015236A79A00001A9E9 /* index.js */; };
+		092247FE2436F3CB00655898 /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 092247FC2436F3CB00655898 /* 0.wav */; };
+		092247FF2436F3CB00655898 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 092247FD2436F3CB00655898 /* 1.wav */; };
 		09232DED241098B6006B1ECB /* CGHDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09232DEC241098B6006B1ECB /* CGHDownloadManager.m */; };
 		09232DF3241099E1006B1ECB /* CGHDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 09232DF2241099E1006B1ECB /* CGHDownloadTask.m */; };
 		0929DC39234DD1BC00BD1A1A /* TestRotateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929DC37234DD1BC00BD1A1A /* TestRotateController.m */; };
 		0929DC3A234DD1BC00BD1A1A /* TestRotateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0929DC38234DD1BC00BD1A1A /* TestRotateController.xib */; };
+		092A66AA2452D12C0006D05B /* CGHWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A66A92452D12C0006D05B /* CGHWebSocketManager.m */; };
 		092DCB2D2366D516004A13B5 /* adver.png in Resources */ = {isa = PBXBuildFile; fileRef = 092DCB2C2366D516004A13B5 /* adver.png */; };
 		092EFCA32423218E00BC73E1 /* CGHContactUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 092EFCA22423218E00BC73E1 /* CGHContactUtil.m */; };
+		09321A032509BDD3007D0D1C /* LFAbstractActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 09321A022509BDD3007D0D1C /* LFAbstractActionSheet.m */; };
+		093DEBC024318313009882DE /* startExcited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 093DEBBF24318313009882DE /* startExcited.mp3 */; };
 		0943162D234C20DD004C985B /* sing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0943162C234C20DD004C985B /* sing.mp3 */; };
 		09431631234C2108004C985B /* TestAudioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0943162F234C2108004C985B /* TestAudioVC.m */; };
 		09431632234C2108004C985B /* TestAudioVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09431630234C2108004C985B /* TestAudioVC.xib */; };
@@ -34,12 +39,13 @@
 		094F085E218F45CA00445FEE /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F085C218F45CA00445FEE /* YYFPSLabel.m */; };
 		095A591F23668F3100A5207B /* SteamEngine.png in Resources */ = {isa = PBXBuildFile; fileRef = 095A591E23668F3100A5207B /* SteamEngine.png */; };
 		095A59212366A3B700A5207B /* 灵魂匹配.png in Resources */ = {isa = PBXBuildFile; fileRef = 095A59202366A3B700A5207B /* 灵魂匹配.png */; };
+		096436E924514DB00084B880 /* KeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 096436E724514DB00084B880 /* KeyboardVC.m */; };
+		096436EA24514DB00084B880 /* KeyboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096436E824514DB00084B880 /* KeyboardVC.xib */; };
+		096436ED24514DFC0084B880 /* CGHKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 096436EC24514DFC0084B880 /* CGHKeyboardManager.m */; };
+		096436F02451512E0084B880 /* CGHInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096436EF2451512E0084B880 /* CGHInputView.m */; };
 		0979BB5A233315A900ECCE27 /* CGHWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0979BB58233315A900ECCE27 /* CGHWebController.m */; };
 		0979BB5D2333209B00ECCE27 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0979BB5C2333209B00ECCE27 /* index.html */; };
 		09ADCD10242D912B0086FCEA /* CGHRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ADCD0F242D912B0086FCEA /* CGHRecorderUtil.m */; };
-		09CCD5AF2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5AE2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m */; };
-		09CCD5B62363E3680050AD8D /* NSURLProtocol+WebKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5B22363E3680050AD8D /* NSURLProtocol+WebKitSupport.m */; };
-		09CCD5B72363E3680050AD8D /* NSString+ACObfuscation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCD5B52363E3680050AD8D /* NSString+ACObfuscation.m */; };
 		09D8D496241B74BE0052C75C /* indexa.js in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D495241B74BE0052C75C /* indexa.js */; };
 		09D9CF682410F1D100DFF038 /* CGHDownloadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D9CF672410F1D100DFF038 /* CGHDownloadUtil.m */; };
 		09DB2300242080A500965F0A /* CGHJSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DB22FF242080A500965F0A /* CGHJSTimer.m */; };
@@ -90,6 +96,8 @@
 		0911300F236A76340001A9E9 /* JSContextTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSContextTestVC.h; sourceTree = "<group>"; };
 		09113010236A76340001A9E9 /* JSContextTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSContextTestVC.m; sourceTree = "<group>"; };
 		09113015236A79A00001A9E9 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		092247FC2436F3CB00655898 /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
+		092247FD2436F3CB00655898 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
 		09232DEB241098B6006B1ECB /* CGHDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHDownloadManager.h; sourceTree = "<group>"; };
 		09232DEC241098B6006B1ECB /* CGHDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHDownloadManager.m; sourceTree = "<group>"; };
 		09232DF1241099E1006B1ECB /* CGHDownloadTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHDownloadTask.h; sourceTree = "<group>"; };
@@ -97,9 +105,18 @@
 		0929DC36234DD1BC00BD1A1A /* TestRotateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRotateController.h; sourceTree = "<group>"; };
 		0929DC37234DD1BC00BD1A1A /* TestRotateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRotateController.m; sourceTree = "<group>"; };
 		0929DC38234DD1BC00BD1A1A /* TestRotateController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRotateController.xib; sourceTree = "<group>"; };
+		092A66A82452D12C0006D05B /* CGHWebSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHWebSocketManager.h; sourceTree = "<group>"; };
+		092A66A92452D12C0006D05B /* CGHWebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHWebSocketManager.m; sourceTree = "<group>"; };
 		092DCB2C2366D516004A13B5 /* adver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adver.png; sourceTree = "<group>"; };
 		092EFC9E2423087100BC73E1 /* CGHContactsUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHContactsUtil.h; sourceTree = "<group>"; };
 		092EFCA22423218E00BC73E1 /* CGHContactUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHContactUtil.m; sourceTree = "<group>"; };
+		09321A012509BDD3007D0D1C /* LFAbstractActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFAbstractActionSheet.h; sourceTree = "<group>"; };
+		09321A022509BDD3007D0D1C /* LFAbstractActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFAbstractActionSheet.m; sourceTree = "<group>"; };
+		0933790A247D1CCB002152B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0933790B247D1CCC002152B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		0933790C247D1CEF002152B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		0933790D247D1CF1002152B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		093DEBBF24318313009882DE /* startExcited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startExcited.mp3; sourceTree = "<group>"; };
 		0943162C234C20DD004C985B /* sing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sing.mp3; sourceTree = "<group>"; };
 		0943162E234C2108004C985B /* TestAudioVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAudioVC.h; sourceTree = "<group>"; };
 		0943162F234C2108004C985B /* TestAudioVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAudioVC.m; sourceTree = "<group>"; };
@@ -111,9 +128,7 @@
 		094F0815218F1DAC00445FEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		094F0817218F1DAC00445FEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		094F0818218F1DAC00445FEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		094F081B218F1DAC00445FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		094F081D218F1DB000445FEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		094F0820218F1DB000445FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		094F0822218F1DB000445FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		094F0823218F1DB000445FEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		094F0829218F1DB100445FEE /* LFDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,18 +146,18 @@
 		094F085D218F45CA00445FEE /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		095A591E23668F3100A5207B /* SteamEngine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SteamEngine.png; sourceTree = "<group>"; };
 		095A59202366A3B700A5207B /* 灵魂匹配.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灵魂匹配.png"; sourceTree = "<group>"; };
+		096436E624514DB00084B880 /* KeyboardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardVC.h; sourceTree = "<group>"; };
+		096436E724514DB00084B880 /* KeyboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardVC.m; sourceTree = "<group>"; };
+		096436E824514DB00084B880 /* KeyboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardVC.xib; sourceTree = "<group>"; };
+		096436EB24514DFC0084B880 /* CGHKeyboardManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHKeyboardManager.h; sourceTree = "<group>"; };
+		096436EC24514DFC0084B880 /* CGHKeyboardManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHKeyboardManager.m; sourceTree = "<group>"; };
+		096436EE2451512E0084B880 /* CGHInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHInputView.h; sourceTree = "<group>"; };
+		096436EF2451512E0084B880 /* CGHInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHInputView.m; sourceTree = "<group>"; };
 		0979BB57233315A900ECCE27 /* CGHWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CGHWebController.h; path = "../../../../../../../../System/Volumes/Data/Users/wulinfeng/iOS开发/Sourcetree/LFDemo/LFDemo/Test/Web/CGHWebController.h"; sourceTree = "<group>"; };
 		0979BB58233315A900ECCE27 /* CGHWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CGHWebController.m; path = "../../../../../../../../System/Volumes/Data/Users/wulinfeng/iOS开发/Sourcetree/LFDemo/LFDemo/Test/Web/CGHWebController.m"; sourceTree = "<group>"; };
 		0979BB5C2333209B00ECCE27 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		09ADCD0E242D912B0086FCEA /* CGHRecorderUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHRecorderUtil.h; sourceTree = "<group>"; };
 		09ADCD0F242D912B0086FCEA /* CGHRecorderUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHRecorderUtil.m; sourceTree = "<group>"; };
-		09CCD5AD2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGHWebSocketServerURLProtocol.h; sourceTree = "<group>"; };
-		09CCD5AE2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGHWebSocketServerURLProtocol.m; sourceTree = "<group>"; };
-		09CCD5B22363E3680050AD8D /* NSURLProtocol+WebKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+WebKitSupport.m"; sourceTree = "<group>"; };
-		09CCD5B32363E3680050AD8D /* NSURLProtocol+WebKitSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+WebKitSupport.h"; sourceTree = "<group>"; };
-		09CCD5B42363E3680050AD8D /* NSString+ACObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ACObfuscation.h"; sourceTree = "<group>"; };
-		09CCD5B52363E3680050AD8D /* NSString+ACObfuscation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACObfuscation.m"; sourceTree = "<group>"; };
-		09CCD5B82363E3F80050AD8D /* ACObfuscationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACObfuscationHeader.h; sourceTree = "<group>"; };
 		09D8D495241B74BE0052C75C /* indexa.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = indexa.js; sourceTree = "<group>"; };
 		09D9CF662410F1D100DFF038 /* CGHDownloadUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGHDownloadUtil.h; sourceTree = "<group>"; };
 		09D9CF672410F1D100DFF038 /* CGHDownloadUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGHDownloadUtil.m; sourceTree = "<group>"; };
@@ -251,6 +266,15 @@
 			path = Rotate;
 			sourceTree = "<group>";
 		};
+		092A66AB2452D1390006D05B /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				092A66A82452D12C0006D05B /* CGHWebSocketManager.h */,
+				092A66A92452D12C0006D05B /* CGHWebSocketManager.m */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
 		092EFC9D242306B700BC73E1 /* SelectContact */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,14 +284,26 @@
 			path = SelectContact;
 			sourceTree = "<group>";
 		};
+		09321A002509BA7F007D0D1C /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				09321A012509BDD3007D0D1C /* LFAbstractActionSheet.h */,
+				09321A022509BDD3007D0D1C /* LFAbstractActionSheet.m */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
 		0943162B234C2085004C985B /* Audio */ = {
 			isa = PBXGroup;
 			children = (
 				09F4EDE3242C40C800A09854 /* audio */,
 				09F4EDDC242C3FEA00A09854 /* record */,
 				0943162C234C20DD004C985B /* sing.mp3 */,
+				093DEBBF24318313009882DE /* startExcited.mp3 */,
 				09431634234C42AA004C985B /* boom.mp3 */,
 				09431633234C42AA004C985B /* bullet.mp3 */,
+				092247FC2436F3CB00655898 /* 0.wav */,
+				092247FD2436F3CB00655898 /* 1.wav */,
 				0943162E234C2108004C985B /* TestAudioVC.h */,
 				0943162F234C2108004C985B /* TestAudioVC.m */,
 				09431630234C2108004C985B /* TestAudioVC.xib */,
@@ -338,6 +374,8 @@
 		094F0850218F3B6700445FEE /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				09321A002509BA7F007D0D1C /* Picker */,
+				096436E524514D7B0084B880 /* Keyboard */,
 				092EFC9D242306B700BC73E1 /* SelectContact */,
 				09E2DC0D240F385C00CD9853 /* FileDownload */,
 				0911300E236A760C0001A9E9 /* JSContext */,
@@ -349,6 +387,7 @@
 				631B0AD421E8297100CEBE60 /* UITextField */,
 				63D115F221CDEF5D00E35504 /* TextShowAll */,
 				094F0851218F3B7400445FEE /* TableView */,
+				092A66AB2452D1390006D05B /* WebSocket */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -374,18 +413,25 @@
 			path = 3rd;
 			sourceTree = "<group>";
 		};
+		096436E524514D7B0084B880 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				096436E624514DB00084B880 /* KeyboardVC.h */,
+				096436E724514DB00084B880 /* KeyboardVC.m */,
+				096436E824514DB00084B880 /* KeyboardVC.xib */,
+				096436EB24514DFC0084B880 /* CGHKeyboardManager.h */,
+				096436EC24514DFC0084B880 /* CGHKeyboardManager.m */,
+				096436EE2451512E0084B880 /* CGHInputView.h */,
+				096436EF2451512E0084B880 /* CGHInputView.m */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 		0979BB562333158A00ECCE27 /* Web */ = {
 			isa = PBXGroup;
 			children = (
 				0979BB57233315A900ECCE27 /* CGHWebController.h */,
 				0979BB58233315A900ECCE27 /* CGHWebController.m */,
-				09CCD5AD2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.h */,
-				09CCD5AE2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m */,
-				09CCD5B42363E3680050AD8D /* NSString+ACObfuscation.h */,
-				09CCD5B52363E3680050AD8D /* NSString+ACObfuscation.m */,
-				09CCD5B32363E3680050AD8D /* NSURLProtocol+WebKitSupport.h */,
-				09CCD5B22363E3680050AD8D /* NSURLProtocol+WebKitSupport.m */,
-				09CCD5B82363E3F80050AD8D /* ACObfuscationHeader.h */,
 				0979BB5C2333209B00ECCE27 /* index.html */,
 				095A591E23668F3100A5207B /* SteamEngine.png */,
 				095A59202366A3B700A5207B /* 灵魂匹配.png */,
@@ -597,6 +643,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 				Base,
 			);
 			mainGroup = 094F0808218F1DAC00445FEE;
@@ -617,6 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0929DC3A234DD1BC00BD1A1A /* TestRotateController.xib in Resources */,
+				096436EA24514DB00084B880 /* KeyboardVC.xib in Resources */,
 				09F0A2A424125AFF00A3C815 /* TestFileDownloadTableVC.xib in Resources */,
 				094F0859218F3BB100445FEE /* LFUserCell.xib in Resources */,
 				09431632234C2108004C985B /* TestAudioVC.xib in Resources */,
@@ -627,6 +675,9 @@
 				631B0ADE21E8374D00CEBE60 /* UITextFieldTestVC.xib in Resources */,
 				09431636234C42AA004C985B /* boom.mp3 in Resources */,
 				092DCB2D2366D516004A13B5 /* adver.png in Resources */,
+				092247FF2436F3CB00655898 /* 1.wav in Resources */,
+				092247FE2436F3CB00655898 /* 0.wav in Resources */,
+				093DEBC024318313009882DE /* startExcited.mp3 in Resources */,
 				095A59212366A3B700A5207B /* 灵魂匹配.png in Resources */,
 				09113017236A79A00001A9E9 /* index.js in Resources */,
 				0979BB5D2333209B00ECCE27 /* index.html in Resources */,
@@ -734,8 +785,8 @@
 				094F0819218F1DAC00445FEE /* ViewController.m in Sources */,
 				63D115F121CDEF5600E35504 /* LFTextShowAllVC.m in Sources */,
 				09113011236A76340001A9E9 /* JSContextTestVC.m in Sources */,
-				09CCD5B62363E3680050AD8D /* NSURLProtocol+WebKitSupport.m in Sources */,
 				0929DC39234DD1BC00BD1A1A /* TestRotateController.m in Sources */,
+				096436F02451512E0084B880 /* CGHInputView.m in Sources */,
 				09232DED241098B6006B1ECB /* CGHDownloadManager.m in Sources */,
 				0979BB5A233315A900ECCE27 /* CGHWebController.m in Sources */,
 				09F4EDE6242C451100A09854 /* CGHRecorder.m in Sources */,
@@ -744,6 +795,7 @@
 				094F0824218F1DB000445FEE /* main.m in Sources */,
 				6311B70C21EED7620058F650 /* ErrorImageTestVC.m in Sources */,
 				094F0854218F3B9300445FEE /* LFOptimazeTableVC.m in Sources */,
+				09321A032509BDD3007D0D1C /* LFAbstractActionSheet.m in Sources */,
 				09DB2300242080A500965F0A /* CGHJSTimer.m in Sources */,
 				094F0858218F3BB100445FEE /* LFUserCell.m in Sources */,
 				09F0A2A824125B7400A3C815 /* FileDownloadCell.m in Sources */,
@@ -752,15 +804,16 @@
 				09431631234C2108004C985B /* TestAudioVC.m in Sources */,
 				09232DF3241099E1006B1ECB /* CGHDownloadTask.m in Sources */,
 				6376F8752216CA080005A1C4 /* DYCircleCacheHelper.m in Sources */,
-				09CCD5B72363E3680050AD8D /* NSString+ACObfuscation.m in Sources */,
 				09F4EDD7242C3B4C00A09854 /* CGHAudioStateManager.m in Sources */,
+				096436ED24514DFC0084B880 /* CGHKeyboardManager.m in Sources */,
 				09F4EDDB242C3BCB00A09854 /* CGHBaseModuleManager.m in Sources */,
+				092A66AA2452D12C0006D05B /* CGHWebSocketManager.m in Sources */,
 				09F4EDE1242C3FF200A09854 /* CGHRecorderManager.m in Sources */,
 				09D9CF682410F1D100DFF038 /* CGHDownloadUtil.m in Sources */,
 				631B0ADD21E8374D00CEBE60 /* UITextFieldTestVC.m in Sources */,
 				092EFCA32423218E00BC73E1 /* CGHContactUtil.m in Sources */,
 				094F0816218F1DAC00445FEE /* AppDelegate.m in Sources */,
-				09CCD5AF2363DBB80050AD8D /* CGHWebSocketServerURLProtocol.m in Sources */,
+				096436E924514DB00084B880 /* KeyboardVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,7 +852,8 @@
 		094F081A218F1DAC00445FEE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				094F081B218F1DAC00445FEE /* Base */,
+				0933790A247D1CCB002152B1 /* zh-Hans */,
+				0933790D247D1CF1002152B1 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -807,7 +861,8 @@
 		094F081F218F1DB000445FEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				094F0820218F1DB000445FEE /* Base */,
+				0933790B247D1CCC002152B1 /* zh-Hans */,
+				0933790C247D1CEF002152B1 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -819,6 +874,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -878,6 +934,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -935,7 +992,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AF8F677DE2;
+				DEVELOPMENT_TEAM = 9PJ22KK765;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = LFDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -949,7 +1006,7 @@
 					"-I\"$(SRCROOT)/LFDemo/Test/Socket/Frameworks\"",
 					"-I\"$(SRCROOT)/LFDemo/Test/Socket/Frameworks/asio\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lio.LFDemo.a;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lio.LFDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

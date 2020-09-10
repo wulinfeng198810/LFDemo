@@ -8,6 +8,7 @@
 
 #import "TestAudioVC.h"
 #import <YYKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "CGHRecorderManager.h"
 #import "CGHAudioStateManager.h"
 #import "CGHRecorderUtil.h"
@@ -23,9 +24,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.recorderManager = CGHRecorderManager.new;
+    
+    AVAudioSessionRouteDescription* route = [[AVAudioSession sharedInstance] currentRoute];
+    for (AVAudioSessionPortDescription* desc in [route inputs]) {
+        NSLog(@"%@", desc);
+    }
+    
 //
     self.audioStateManager = [[CGHAudioStateManager alloc] initWithDelegate:nil];
     [self.audioStateManager createAudioInstance:@{@"audioId": @"1"}];
+    
+    [self merge];
+    
+}
+
+- (void)merge {
+    NSArray *arr = @[@"0.wav", @"1.wav"];
+    NSMutableArray *files = @[].mutableCopy;
+    NSString *bundlePath = NSBundle.mainBundle.bundlePath;
+    NSString *tmpWavPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"merge.wav"];
+    [arr enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [files addObject:[bundlePath stringByAppendingPathComponent:obj]];
+    }];
+    [CGHRecorderUtil mergeAudios:files toPath:tmpWavPath completeHandler:^(NSError * _Nullable error, NSURL * _Nullable outputUrl) {
+        NSLog(@"");
+    }];
 }
 
 #pragma mark - record
@@ -55,8 +78,9 @@
 
 #pragma mark - audio
 - (IBAction)play:(UIButton *)sender {
-//    NSString *filePath = [NSBundle.mainBundle pathForResource:@"1111.amr" ofType:nil];
-    NSString *filePath = self.recorderManager.destPath;
+//    NSString *filePath = [NSBundle.mainBundle pathForResource:@"sing.mp3" ofType:nil];
+//    NSString *filePath = self.recorderManager.destPath;
+    NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"merge.wav"];
     if (![NSFileManager.defaultManager fileExistsAtPath:filePath]) {
         NSLog(@"file not exists：%@", filePath);
         return;

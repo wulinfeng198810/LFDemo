@@ -7,12 +7,14 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <CoreServices/UTCoreTypes.h>
 #import <YYKit.h>
-#import "TestAudioVC.h"
+#import "LFAbstractActionSheet.h"
 
 #define DY_APPSTORE 1
 
-@interface ViewController ()
+@interface ViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (nonatomic, strong) UILabel *badgeLabel;
 @end
 
@@ -29,9 +31,17 @@
 }
 
 - (IBAction)testAction:(id)sender {
-    UIViewController *vc = [[TestAudioVC alloc] initWithNibName:@"TestAudioVC" bundle:NSBundle.mainBundle];
-//    [self.navigationController pushViewController:NSClassFromString(@"JSContextTestVC").new animated:YES];
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController *vc = [[TestAudioVC alloc] initWithNibName:@"TestAudioVC" bundle:NSBundle.mainBundle];
+////    [self.navigationController pushViewController:NSClassFromString(@"JSContextTestVC").new animated:YES];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    UIButton *testBtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 50, 100, 100)];
+    [testBtn setTitle:@"测试" forState:UIControlStateNormal];
+    testBtn.backgroundColor = UIColor.redColor;
+    [testBtn addTarget:self action:@selector(testAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    LFAbstractActionSheet *picker = [[LFAbstractActionSheet alloc] init];
+    [picker show:testBtn inContainer:self.view];
 }
 
 @end
